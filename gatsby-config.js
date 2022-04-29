@@ -14,7 +14,7 @@ module.exports = {
   siteMetadata: {
     pages: [
       {
-        title: 'Cloud Manager',
+        title: 'Workfront',
         path: '/',
       },
       {
@@ -28,21 +28,21 @@ module.exports = {
       {
         title: 'API Reference',
         menu: [{
-          title: 'Cloud Manager API',
-          description: 'Reference document for the Cloud Manager API',
+          title: 'v14.0',
+          description: 'Reference for Workfront API v14.0',
           path: '/reference/api/',
         }, {
           title: 'Cloud Manager API Models',
-          description: 'Reference document for the model objects Cloud Manager API',
-          path: '/reference/models/',
+          description: 'Reference for Workfront API v13.0',
+          path: '/reference/api/',
         }, {
           title: 'Event Definitions',
-          description: 'Definition of Event Payloads',
-          path: '/reference/events/',
+          description: 'Reference for Workfront API v12.0,
+          path: '/reference/api/',
         }, {
           title: 'Playground',
-          description: 'API Playground (Early Access)',
-          path: '/reference/playground/',
+          description: 'Reference for Workfront API v11.0,
+          path: '/reference/api/',
         }],
       },
       {
