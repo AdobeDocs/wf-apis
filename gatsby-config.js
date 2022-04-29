@@ -34,24 +34,6 @@ module.exports = {
         path: 'https://github.com/AdobeDocs'
       }
     ],
-    pages: [
-      {
-        title: 'Adobe Workfront',
-        path: '/'
-      },
-      {
-        title: 'API Reference',
-        menu: [{
-          title: 'API Reference v2.0',
-          description: 'Adobe Analytics Reporting API',
-          path: '/api/index.md'
-        }, {
-          title: 'API Reference v14.0',
-          description: 'API Spec for Workfront endpoints',
-          path: '/api/14.md'
-        }]
-      },
-    ],
   plugins: [`@adobe/gatsby-theme-aio`],
   pathPrefix: process.env.PATH_PREFIX || '/dev-site-documentation-template/'
 };
