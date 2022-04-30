@@ -1,5 +1,5 @@
 ---
-title: Adobe Workfront: API reference v14.0 for Other requests
-description: Other Workfront version 14.0 API calls.
-openAPISpec: /other_v14.json  
+title: Adobe Workfront: API reference v13.0 for Other requests
+description: Other Workfront version 13.0 API calls.
+openAPISpec: https://raw.githubusercontent.com/AdobeDocs/wf-apis/main/other_v13.json
 ---
