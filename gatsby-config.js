@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 Adobe. All rights reserved.
+ * Copyright 2020 Adobe. All rights reserved.
  * This file is licensed to you under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License. You may obtain a copy
  * of the License at http://www.apache.org/licenses/LICENSE-2.0
@@ -12,151 +12,145 @@
 
 module.exports = {
   siteMetadata: {
+    versions: [
+      {
+        title: 'v2.0',
+        selected: true
+      },
+      {
+        title: 'v1.4',
+        path: 'https://github.com/AdobeDocs/analytics-1.4-apis'
+      }
+    ],
     pages: [
       {
-        title: 'Cloud Manager',
-        path: '/',
+        title: 'Adobe Analytics',
+        path: '/'
       },
       {
         title: 'Guides',
-        path: '/guides/',
-      },
-      {
-        title: 'Tutorial',
-        path: '/tutorial/',
+        path: '/guides/'
       },
       {
         title: 'API Reference',
         menu: [{
-          title: 'Cloud Manager API',
-          description: 'Reference document for the Cloud Manager API',
-          path: '/reference/api/',
+          title: 'API Reference v2.0',
+          description: 'Adobe Analytics Reporting API',
+          path: '/api/index.md'
         }, {
-          title: 'Cloud Manager API Models',
-          description: 'Reference document for the model objects Cloud Manager API',
-          path: '/reference/models/',
-        }, {
-          title: 'Event Definitions',
-          description: 'Definition of Event Payloads',
-          path: '/reference/events/',
-        }, {
-          title: 'Playground',
-          description: 'API Playground (Early Access)',
-          path: '/reference/playground/',
-        }],
+          title: 'API Reference v1.4',
+          description: 'API Spec for the Adobe Marketing Cloud',
+          path: '/api/1.4.md'
+        }]
       },
       {
-        title: 'CLI and SDKs',
-        path: '/cli-and-sdks/',
-      },
+        title: 'Support',
+        path: '/support/'
+      }
     ],
     subPages: [
       {
-        title: 'Getting Started',
-        path: '/guides/getting-started/',
+        title: 'Get Started',
+        path: '/guides/',
+        pages: [
+          {
+            title: 'Overview',
+            path: '/guides/'
+          },
+          {
+            title: 'Creating an OAuth Client',
+            path: '/guides/creating_oauth_client/'
+          },
+          {
+            title: 'OAuth using cURL',
+            path: '/guides/oauth_using_curl/'
+          },
+          {
+            title: 'OAuth using POSTMAN',
+            path: '/guides/oauth_using_postman/'
+          },
+          {
+            title: 'JWT Authentication',
+            path: '/guides/jwt_authentication/'
+          }
+        ]
+      },
+      {
+        title: 'Reporting API',
+        path: '/guides/reporting_api/',
+        pages: [
+          {
+            title: 'Overview',
+            path: '/guides/reporting_api/'
+          },
+          {
+            title: 'Reporting with breakdowns',
+            path: '/guides/reporting_api/reporting_breakdowns/',
+            pages: [
+              {
+                title: 'Reporting with single breakdowns',
+                path: '/guides/reporting_api/reporting_breakdowns/',
+              },
+              {
+                title: 'Reporting with multiple breakdowns',
+                path: '/guides/reporting_api/reporting_breakdowns/reporting_multiple_breakdowns/',
+              },
+            ]
+          },
+          {
+            title: 'Reporting tips and tricks',
+            path: '/guides/reporting_api/reporting_tips_tricks/'
+          }
+        ]
+      },
+      {
+        title: 'Discovery API',
+        path: '/guides/discovery_api/'
+      },
+      {
+        title: 'Segments API',
+        path: '/guides/segments_api/'
+      },
+      {
+        title: 'Calculated Metrics API',
+        path: '/guides/calculated_metrics_api/'
+      },
+      {
+        title: 'Migrating',
+        path: '/guides/migrating/'
+      },
+      {
+        title: 'Overview',
+        path: '/support/',
         header: true,
         pages: [
           {
-            title: 'Understanding the API',
-            path: '/guides/getting-started/understanding-the-api/',
+            title: 'Help',
+            path: '/support/'
           },
           {
-            title: 'Create an API Integration Project',
-            path: '/guides/getting-started/create-api-integration/',
+            title: 'FAQ',
+            path: '/support/FAQ/'
           },
           {
-            title: 'Create an Event Integration Project',
-            path: '/guides/getting-started/create-event-integration/',
-          },
-          {
-            path: 'guides/getting-started/authentication.md',
-            title: 'Authentication',
-          },
-          {
-            path: 'guides/getting-started/permissions.md',
-            title: 'API Permissions',
-          },
-          {
-            title: 'Getting Started with Postman',
-            path: '/guides/getting-started/getting-started-with-postman/',
-          },
-        ],
+            title: 'How to contribute',
+            path: '/support/contribute/'
+          }
+        ]
       },
       {
-        title: 'API Usage',
-        path: '/guides/api-usage/',
+        title: 'Community',
+        path: '/support/community/',
         header: true,
         pages: [
           {
-            path: 'guides/api-usage/receiving-events.md',
-            title: 'Receiving Events',
-          },
-          {
-            path: 'guides/api-usage/understanding-metric-data.md',
-            title: 'Understanding Metric Data',
-          },
-          {
-            path: 'guides/api-usage/editing-and-deleting-pipelines.md',
-            title: 'Editing and Deleting Pipelines',
-          },
-          {
-            path: 'guides/api-usage/advancing-and-cancelling-steps.md',
-            title: 'Advancing and Cancelling Steps',
-          },
-          {
-            path: 'guides/api-usage/creating-programs-and-environments.md',
-            title: 'Creating Programs and Environments',
-          },
-          {
-            path: 'guides/api-usage/adding-custom-domain-names.md',
-            title: 'Adding Custom Domain Names',
-          },
-        ],
-      },
-      {
-        title: 'Tutorial Overview',
-        path: '/tutorial/',
-      },
-      {
-        title: 'Step 1 - A Basic Webhook',
-        path: '/tutorial/1-a-basic-webhook/',
-      },
-      {
-        title: 'Step 2 - Webhook Signature Validation',
-        path: '/tutorial/2-webhook-signature-validation/',
-      },
-      {
-        title: 'Step 3 - Handling Specific Events',
-        path: '/tutorial/3-handling-specific-events/',
-      },
-      {
-        title: 'Step 4 - Getting an Access Token',
-        path: '/tutorial/4-getting-an-access-token/',
-      },
-      {
-        title: 'Step 5 - Getting the Execution',
-        path: '/tutorial/5-getting-the-execution/',
-      },
-      {
-        title: 'Step 6 - Getting the Program',
-        path: '/tutorial/6-getting-the-program/',
-      },
-      {
-        title: 'Step 7 - Sending Notifications',
-        path: '/tutorial/7-sending-notifications/',
-      },
-    ],
+            title: 'Information',
+            path: '/support/community/'
+          }
+        ]
+      }
+    ]
   },
-  plugins: [
-    '@adobe/gatsby-theme-aio',
-    {
-      resolve: 'gatsby-plugin-static-folders',
-      options: {
-        folders: [
-          './swagger-specs',
-        ],
-      },
-    },
-  ],
-  pathPrefix: process.env.PATH_PREFIX || '/experience-cloud/cloud-manager/',
-}
+  plugins: [`@adobe/gatsby-theme-aio`],
+  pathPrefix: process.env.PATH_PREFIX || '/dev-site-documentation-template/'
+};
