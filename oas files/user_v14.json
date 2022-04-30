@@ -1,0 +1,189 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Workfront USER API v14.0",
+    "contact": {
+      "email": "support@workfront.com"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://*.my.workfront.com/attask/api/v14.0",
+      "description": "My Workfront API v14.0 Server"
+    }
+  ],
+  "components": {
+    "securitySchemes": {
+      "$ref": "./securitySchemes/index.yml"
+    }
+  },
+  "security": [
+    {
+      "apiKeyHeader": []
+    },
+    {
+      "apiKeyQuery": []
+    },
+    {
+      "sessionCookie": []
+    },
+    {
+      "sessionHeader": []
+    },
+    {
+      "sessionQuery": []
+    },
+    {
+      "usernameHeader": [],
+      "passwordHeader": []
+    },
+    {
+      "usernameQuery": [],
+      "passwordQuery": []
+    }
+  ],
+  "tags": [
+    {
+      "name": "authentication",
+      "description": "Requests related to ensuring follow-up requests have the proper access."
+    },
+    {
+      "name": "general",
+      "description": "General purpose requests"
+    }
+  ],
+  "paths": {
+    "/user/metadata": {
+      "$ref": "./paths/user/metadata.json"
+    },
+    "/user": {
+      "$ref": "./paths/user.json"
+    },
+    "/user/count": {
+      "$ref": "./paths/user/count.json"
+    },
+    "/user/{ID}": {
+      "$ref": "./paths/user/%7BID%7D.json"
+    },
+    "/user/replace": {
+      "$ref": "./paths/user/replace.json"
+    },
+    "/user/{ID}/replace": {
+      "$ref": "./paths/user/%7BID%7D/replace.json"
+    },
+    "/user/report": {
+      "$ref": "./paths/user/report.json"
+    },
+    "/user/search": {
+      "$ref": "./paths/user/search.json"
+    },
+    "/user/addMobileDevice": {
+      "$ref": "./paths/user/addMobileDevice.json"
+    },
+    "/user/{ID}/addMobileDevice": {
+      "$ref": "./paths/user/%7BID%7D/addMobileDevice.json"
+    },
+    "/user/assignUserToken": {
+      "$ref": "./paths/user/assignUserToken.json"
+    },
+    "/user/{ID}/assignUserToken": {
+      "$ref": "./paths/user/%7BID%7D/assignUserToken.json"
+    },
+    "/user/calculateDataExtension": {
+      "$ref": "./paths/user/calculateDataExtension.json"
+    },
+    "/user/{ID}/calculateDataExtension": {
+      "$ref": "./paths/user/%7BID%7D/calculateDataExtension.json"
+    },
+    "/user/clearAllApiKeys": {
+      "$ref": "./paths/user/clearAllApiKeys.json"
+    },
+    "/user/{ID}/clearAllApiKeys": {
+      "$ref": "./paths/user/%7BID%7D/clearAllApiKeys.json"
+    },
+    "/user/clearApiKey": {
+      "$ref": "./paths/user/clearApiKey.json"
+    },
+    "/user/{ID}/clearApiKey": {
+      "$ref": "./paths/user/%7BID%7D/clearApiKey.json"
+    },
+    "/user/completeUserRegistration": {
+      "$ref": "./paths/user/completeUserRegistration.json"
+    },
+    "/user/{ID}/completeUserRegistration": {
+      "$ref": "./paths/user/%7BID%7D/completeUserRegistration.json"
+    },
+    "/user/generateApiKey": {
+      "$ref": "./paths/user/generateApiKey.json"
+    },
+    "/user/{ID}/generateApiKey": {
+      "$ref": "./paths/user/%7BID%7D/generateApiKey.json"
+    },
+    "/user/getApiKey": {
+      "$ref": "./paths/user/getApiKey.json"
+    },
+    "/user/{ID}/getApiKey": {
+      "$ref": "./paths/user/%7BID%7D/getApiKey.json"
+    },
+    "/user/getAvailableActions": {
+      "$ref": "./paths/user/getAvailableActions.json"
+    },
+    "/user/{ID}/getAvailableActions": {
+      "$ref": "./paths/user/%7BID%7D/getAvailableActions.json"
+    },
+    "/user/getUserAccessPermissionsByObjCode": {
+      "$ref": "./paths/user/getUserAccessPermissionsByObjCode.json"
+    },
+    "/user/{ID}/getUserAccessPermissionsByObjCode": {
+      "$ref": "./paths/user/%7BID%7D/getUserAccessPermissionsByObjCode.json"
+    },
+    "/user/getUserCustomLabels": {
+      "$ref": "./paths/user/getUserCustomLabels.json"
+    },
+    "/user/{ID}/getUserCustomLabels": {
+      "$ref": "./paths/user/%7BID%7D/getUserCustomLabels.json"
+    },
+    "/user/hasAnyAccess": {
+      "$ref": "./paths/user/hasAnyAccess.json"
+    },
+    "/user/{ID}/hasAnyAccess": {
+      "$ref": "./paths/user/%7BID%7D/hasAnyAccess.json"
+    },
+    "/user/hasGrantLoginAsAccess": {
+      "$ref": "./paths/user/hasGrantLoginAsAccess.json"
+    },
+    "/user/{ID}/hasGrantLoginAsAccess": {
+      "$ref": "./paths/user/%7BID%7D/hasGrantLoginAsAccess.json"
+    },
+    "/user/isUserAdmin": {
+      "$ref": "./paths/user/isUserAdmin.json"
+    },
+    "/user/{ID}/isUserAdmin": {
+      "$ref": "./paths/user/%7BID%7D/isUserAdmin.json"
+    },
+    "/user/isUserTerminologyActive": {
+      "$ref": "./paths/user/isUserTerminologyActive.json"
+    },
+    "/user/{ID}/isUserTerminologyActive": {
+      "$ref": "./paths/user/%7BID%7D/isUserTerminologyActive.json"
+    },
+    "/user/removeMobileDevice": {
+      "$ref": "./paths/user/removeMobileDevice.json"
+    },
+    "/user/{ID}/removeMobileDevice": {
+      "$ref": "./paths/user/%7BID%7D/removeMobileDevice.json"
+    },
+    "/user/sendInvitationEmail": {
+      "$ref": "./paths/user/sendInvitationEmail.json"
+    },
+    "/user/{ID}/sendInvitationEmail": {
+      "$ref": "./paths/user/%7BID%7D/sendInvitationEmail.json"
+    },
+    "/user/shouldShowProofHQNavButton": {
+      "$ref": "./paths/user/shouldShowProofHQNavButton.json"
+    },
+    "/user/{ID}/shouldShowProofHQNavButton": {
+      "$ref": "./paths/user/%7BID%7D/shouldShowProofHQNavButton.json"
+    }
+  }
+}
