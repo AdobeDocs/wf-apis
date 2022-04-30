@@ -1,0 +1,3087 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Workfront API v14.0",
+    "contact": {
+      "email": "support@workfront.com"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://*.my.workfront.com/attask/api/v14.0",
+      "description": "My Workfront API v14.0 Server"
+    }
+  ],
+  "components": {
+    "securitySchemes": {
+      "$ref": "./securitySchemes/index.yml"
+    }
+  },
+  "security": [
+    {
+      "apiKeyHeader": []
+    },
+    {
+      "apiKeyQuery": []
+    },
+    {
+      "sessionCookie": []
+    },
+    {
+      "sessionHeader": []
+    },
+    {
+      "sessionQuery": []
+    },
+    {
+      "usernameHeader": [],
+      "passwordHeader": []
+    },
+    {
+      "usernameQuery": [],
+      "passwordQuery": []
+    }
+  ],
+  "tags": [
+    {
+      "name": "authentication",
+      "description": "Requests related to ensuring follow-up requests have the proper access."
+    },
+    {
+      "name": "general",
+      "description": "General purpose requests"
+    }
+  ],
+  "paths": {
+    "/info": {
+      "$ref": "./paths/info.yml"
+    },
+    "/login": {
+      "$ref": "./paths/login.yml"
+    },
+    "/logout": {
+      "$ref": "./paths/logout.yml"
+    },
+    "/metadata": {
+      "$ref": "./paths/metadata.yml"
+    },
+    "/apivmd/metadata": {
+      "$ref": "./paths/apivmd/metadata.json"
+    },
+    "/apivmd/count": {
+      "$ref": "./paths/apivmd/count.json"
+    },
+    "/apivmd/{ID}": {
+      "$ref": "./paths/apivmd/%7BID%7D.json"
+    },
+    "/apivmd/report": {
+      "$ref": "./paths/apivmd/report.json"
+    },
+    "/apivmd/search": {
+      "$ref": "./paths/apivmd/search.json"
+    },
+    "/acslvl/metadata": {
+      "$ref": "./paths/acslvl/metadata.json"
+    },
+    "/acslvl": {
+      "$ref": "./paths/acslvl.json"
+    },
+    "/acslvl/count": {
+      "$ref": "./paths/acslvl/count.json"
+    },
+    "/acslvl/{ID}": {
+      "$ref": "./paths/acslvl/%7BID%7D.json"
+    },
+    "/acslvl/replace": {
+      "$ref": "./paths/acslvl/replace.json"
+    },
+    "/acslvl/{ID}/replace": {
+      "$ref": "./paths/acslvl/%7BID%7D/replace.json"
+    },
+    "/acslvl/report": {
+      "$ref": "./paths/acslvl/report.json"
+    },
+    "/acslvl/search": {
+      "$ref": "./paths/acslvl/search.json"
+    },
+    "/acsreq/metadata": {
+      "$ref": "./paths/acsreq/metadata.json"
+    },
+    "/acsreq": {
+      "$ref": "./paths/acsreq.json"
+    },
+    "/acsreq/count": {
+      "$ref": "./paths/acsreq/count.json"
+    },
+    "/acsreq/{ID}": {
+      "$ref": "./paths/acsreq/%7BID%7D.json"
+    },
+    "/acsreq/report": {
+      "$ref": "./paths/acsreq/report.json"
+    },
+    "/acsreq/search": {
+      "$ref": "./paths/acsreq/search.json"
+    },
+    "/acsreq/grantAccess": {
+      "$ref": "./paths/acsreq/grantAccess.json"
+    },
+    "/acsreq/{ID}/grantAccess": {
+      "$ref": "./paths/acsreq/%7BID%7D/grantAccess.json"
+    },
+    "/acsreq/grantObjectAccess": {
+      "$ref": "./paths/acsreq/grantObjectAccess.json"
+    },
+    "/acsreq/{ID}/grantObjectAccess": {
+      "$ref": "./paths/acsreq/%7BID%7D/grantObjectAccess.json"
+    },
+    "/acsreq/ignore": {
+      "$ref": "./paths/acsreq/ignore.json"
+    },
+    "/acsreq/{ID}/ignore": {
+      "$ref": "./paths/acsreq/%7BID%7D/ignore.json"
+    },
+    "/acsreq/recall": {
+      "$ref": "./paths/acsreq/recall.json"
+    },
+    "/acsreq/{ID}/recall": {
+      "$ref": "./paths/acsreq/%7BID%7D/recall.json"
+    },
+    "/acsreq/remind": {
+      "$ref": "./paths/acsreq/remind.json"
+    },
+    "/acsreq/{ID}/remind": {
+      "$ref": "./paths/acsreq/%7BID%7D/remind.json"
+    },
+    "/alvper/metadata": {
+      "$ref": "./paths/alvper/metadata.json"
+    },
+    "/acsrul/metadata": {
+      "$ref": "./paths/acsrul/metadata.json"
+    },
+    "/arpref/metadata": {
+      "$ref": "./paths/arpref/metadata.json"
+    },
+    "/actlog/metadata": {
+      "$ref": "./paths/actlog/metadata.json"
+    },
+    "/actlog/count": {
+      "$ref": "./paths/actlog/count.json"
+    },
+    "/actlog/{ID}": {
+      "$ref": "./paths/actlog/%7BID%7D.json"
+    },
+    "/actlog/search": {
+      "$ref": "./paths/actlog/search.json"
+    },
+    "/ancmnt/metadata": {
+      "$ref": "./paths/ancmnt/metadata.json"
+    },
+    "/ancmnt": {
+      "$ref": "./paths/ancmnt.json"
+    },
+    "/ancmnt/count": {
+      "$ref": "./paths/ancmnt/count.json"
+    },
+    "/ancmnt/{ID}": {
+      "$ref": "./paths/ancmnt/%7BID%7D.json"
+    },
+    "/ancmnt/report": {
+      "$ref": "./paths/ancmnt/report.json"
+    },
+    "/ancmnt/search": {
+      "$ref": "./paths/ancmnt/search.json"
+    },
+    "/ack/metadata": {
+      "$ref": "./paths/ack/metadata.json"
+    },
+    "/ack": {
+      "$ref": "./paths/ack.json"
+    },
+    "/ack/count": {
+      "$ref": "./paths/ack/count.json"
+    },
+    "/ack/{ID}": {
+      "$ref": "./paths/ack/%7BID%7D.json"
+    },
+    "/ack/report": {
+      "$ref": "./paths/ack/report.json"
+    },
+    "/ack/search": {
+      "$ref": "./paths/ack/search.json"
+    },
+    "/ack/acknowledge": {
+      "$ref": "./paths/ack/acknowledge.json"
+    },
+    "/ack/{ID}/acknowledge": {
+      "$ref": "./paths/ack/%7BID%7D/acknowledge.json"
+    },
+    "/ack/acknowledgeMany": {
+      "$ref": "./paths/ack/acknowledgeMany.json"
+    },
+    "/ack/{ID}/acknowledgeMany": {
+      "$ref": "./paths/ack/%7BID%7D/acknowledgeMany.json"
+    },
+    "/ack/unacknowledge": {
+      "$ref": "./paths/ack/unacknowledge.json"
+    },
+    "/ack/{ID}/unacknowledge": {
+      "$ref": "./paths/ack/%7BID%7D/unacknowledge.json"
+    },
+    "/aglewk/metadata": {
+      "$ref": "./paths/aglewk/metadata.json"
+    },
+    "/aglewk": {
+      "$ref": "./paths/aglewk.json"
+    },
+    "/aglewk/count": {
+      "$ref": "./paths/aglewk/count.json"
+    },
+    "/aglewk/{ID}": {
+      "$ref": "./paths/aglewk/%7BID%7D.json"
+    },
+    "/aglewk/report": {
+      "$ref": "./paths/aglewk/report.json"
+    },
+    "/aglewk/search": {
+      "$ref": "./paths/aglewk/search.json"
+    },
+    "/aglewk/bulkCopy": {
+      "$ref": "./paths/aglewk/bulkCopy.json"
+    },
+    "/aglewk/{ID}/bulkCopy": {
+      "$ref": "./paths/aglewk/%7BID%7D/bulkCopy.json"
+    },
+    "/anmatt/metadata": {
+      "$ref": "./paths/anmatt/metadata.json"
+    },
+    "/anmatt/count": {
+      "$ref": "./paths/anmatt/count.json"
+    },
+    "/anmatt/{ID}": {
+      "$ref": "./paths/anmatt/%7BID%7D.json"
+    },
+    "/anmatt/report": {
+      "$ref": "./paths/anmatt/report.json"
+    },
+    "/anmatt/search": {
+      "$ref": "./paths/anmatt/search.json"
+    },
+    "/ancrec/metadata": {
+      "$ref": "./paths/ancrec/metadata.json"
+    },
+    "/arvpth/metadata": {
+      "$ref": "./paths/arvpth/metadata.json"
+    },
+    "/arvpth/count": {
+      "$ref": "./paths/arvpth/count.json"
+    },
+    "/arvpth/{ID}": {
+      "$ref": "./paths/arvpth/%7BID%7D.json"
+    },
+    "/arvpth/report": {
+      "$ref": "./paths/arvpth/report.json"
+    },
+    "/arvpth/search": {
+      "$ref": "./paths/arvpth/search.json"
+    },
+    "/approval/metadata": {
+      "$ref": "./paths/approval/metadata.json"
+    },
+    "/approval": {
+      "$ref": "./paths/approval.json"
+    },
+    "/approval/{ID}": {
+      "$ref": "./paths/approval/%7BID%7D.json"
+    },
+    "/approval/isInMyApprovals": {
+      "$ref": "./paths/approval/isInMyApprovals.json"
+    },
+    "/approval/{ID}/isInMyApprovals": {
+      "$ref": "./paths/approval/%7BID%7D/isInMyApprovals.json"
+    },
+    "/approval/isInMySubmittedApprovals": {
+      "$ref": "./paths/approval/isInMySubmittedApprovals.json"
+    },
+    "/approval/{ID}/isInMySubmittedApprovals": {
+      "$ref": "./paths/approval/%7BID%7D/isInMySubmittedApprovals.json"
+    },
+    "/arvstp/metadata": {
+      "$ref": "./paths/arvstp/metadata.json"
+    },
+    "/arvprc/metadata": {
+      "$ref": "./paths/arvprc/metadata.json"
+    },
+    "/arvprc": {
+      "$ref": "./paths/arvprc.json"
+    },
+    "/arvprc/count": {
+      "$ref": "./paths/arvprc/count.json"
+    },
+    "/arvprc/{ID}": {
+      "$ref": "./paths/arvprc/%7BID%7D.json"
+    },
+    "/arvprc/report": {
+      "$ref": "./paths/arvprc/report.json"
+    },
+    "/arvprc/search": {
+      "$ref": "./paths/arvprc/search.json"
+    },
+    "/arvsts/metadata": {
+      "$ref": "./paths/arvsts/metadata.json"
+    },
+    "/assgn/metadata": {
+      "$ref": "./paths/assgn/metadata.json"
+    },
+    "/assgn": {
+      "$ref": "./paths/assgn.json"
+    },
+    "/assgn/count": {
+      "$ref": "./paths/assgn/count.json"
+    },
+    "/assgn/{ID}": {
+      "$ref": "./paths/assgn/%7BID%7D.json"
+    },
+    "/assgn/report": {
+      "$ref": "./paths/assgn/report.json"
+    },
+    "/assgn/search": {
+      "$ref": "./paths/assgn/search.json"
+    },
+    "/assgn/assignUserToRoleOnProjects": {
+      "$ref": "./paths/assgn/assignUserToRoleOnProjects.json"
+    },
+    "/assgn/{ID}/assignUserToRoleOnProjects": {
+      "$ref": "./paths/assgn/%7BID%7D/assignUserToRoleOnProjects.json"
+    },
+    "/assgn/assignUserToRoleOnTasks": {
+      "$ref": "./paths/assgn/assignUserToRoleOnTasks.json"
+    },
+    "/assgn/{ID}/assignUserToRoleOnTasks": {
+      "$ref": "./paths/assgn/%7BID%7D/assignUserToRoleOnTasks.json"
+    },
+    "/assgn/swapUsersOnProjects": {
+      "$ref": "./paths/assgn/swapUsersOnProjects.json"
+    },
+    "/assgn/{ID}/swapUsersOnProjects": {
+      "$ref": "./paths/assgn/%7BID%7D/swapUsersOnProjects.json"
+    },
+    "/assgn/swapUsersOnTasks": {
+      "$ref": "./paths/assgn/swapUsersOnTasks.json"
+    },
+    "/assgn/{ID}/swapUsersOnTasks": {
+      "$ref": "./paths/assgn/%7BID%7D/swapUsersOnTasks.json"
+    },
+    "/assgn/unassignUserFromProjects": {
+      "$ref": "./paths/assgn/unassignUserFromProjects.json"
+    },
+    "/assgn/{ID}/unassignUserFromProjects": {
+      "$ref": "./paths/assgn/%7BID%7D/unassignUserFromProjects.json"
+    },
+    "/assgn/unassignUserFromTasks": {
+      "$ref": "./paths/assgn/unassignUserFromTasks.json"
+    },
+    "/assgn/{ID}/unassignUserFromTasks": {
+      "$ref": "./paths/assgn/%7BID%7D/unassignUserFromTasks.json"
+    },
+    "/avatar/metadata": {
+      "$ref": "./paths/avatar/metadata.json"
+    },
+    "/avatar": {
+      "$ref": "./paths/avatar.json"
+    },
+    "/avatar/{ID}": {
+      "$ref": "./paths/avatar/%7BID%7D.json"
+    },
+    "/auds/metadata": {
+      "$ref": "./paths/auds/metadata.json"
+    },
+    "/auds/count": {
+      "$ref": "./paths/auds/count.json"
+    },
+    "/auds/{ID}": {
+      "$ref": "./paths/auds/%7BID%7D.json"
+    },
+    "/auds/report": {
+      "$ref": "./paths/auds/report.json"
+    },
+    "/auds/search": {
+      "$ref": "./paths/auds/search.json"
+    },
+    "/auds": {
+      "$ref": "./paths/auds.json"
+    },
+    "/auds/allAccessedUsers": {
+      "$ref": "./paths/auds/allAccessedUsers.json"
+    },
+    "/auds/{ID}/allAccessedUsers": {
+      "$ref": "./paths/auds/%7BID%7D/allAccessedUsers.json"
+    },
+    "/auds/allAdmins": {
+      "$ref": "./paths/auds/allAdmins.json"
+    },
+    "/auds/{ID}/allAdmins": {
+      "$ref": "./paths/auds/%7BID%7D/allAdmins.json"
+    },
+    "/auds/getAccessedUsers": {
+      "$ref": "./paths/auds/getAccessedUsers.json"
+    },
+    "/auds/{ID}/getAccessedUsers": {
+      "$ref": "./paths/auds/%7BID%7D/getAccessedUsers.json"
+    },
+    "/auds/whoAccessedUser": {
+      "$ref": "./paths/auds/whoAccessedUser.json"
+    },
+    "/auds/{ID}/whoAccessedUser": {
+      "$ref": "./paths/auds/%7BID%7D/whoAccessedUser.json"
+    },
+    "/bkgjob/metadata": {
+      "$ref": "./paths/bkgjob/metadata.json"
+    },
+    "/bkgjob": {
+      "$ref": "./paths/bkgjob.json"
+    },
+    "/bkgjob/count": {
+      "$ref": "./paths/bkgjob/count.json"
+    },
+    "/bkgjob/{ID}": {
+      "$ref": "./paths/bkgjob/%7BID%7D.json"
+    },
+    "/bkgjob/report": {
+      "$ref": "./paths/bkgjob/report.json"
+    },
+    "/bkgjob/search": {
+      "$ref": "./paths/bkgjob/search.json"
+    },
+    "/awapvl/metadata": {
+      "$ref": "./paths/awapvl/metadata.json"
+    },
+    "/awapvl/count": {
+      "$ref": "./paths/awapvl/count.json"
+    },
+    "/awapvl/{ID}": {
+      "$ref": "./paths/awapvl/%7BID%7D.json"
+    },
+    "/awapvl/report": {
+      "$ref": "./paths/awapvl/report.json"
+    },
+    "/awapvl/search": {
+      "$ref": "./paths/awapvl/search.json"
+    },
+    "/awapvl": {
+      "$ref": "./paths/awapvl.json"
+    },
+    "/awapvl/getMyAwaitingApprovalsFilteredCount": {
+      "$ref": "./paths/awapvl/getMyAwaitingApprovalsFilteredCount.json"
+    },
+    "/awapvl/{ID}/getMyAwaitingApprovalsFilteredCount": {
+      "$ref": "./paths/awapvl/%7BID%7D/getMyAwaitingApprovalsFilteredCount.json"
+    },
+    "/bstsk/metadata": {
+      "$ref": "./paths/bstsk/metadata.json"
+    },
+    "/bstsk/count": {
+      "$ref": "./paths/bstsk/count.json"
+    },
+    "/bstsk/{ID}": {
+      "$ref": "./paths/bstsk/%7BID%7D.json"
+    },
+    "/bstsk/report": {
+      "$ref": "./paths/bstsk/report.json"
+    },
+    "/bstsk/search": {
+      "$ref": "./paths/bstsk/search.json"
+    },
+    "/blin/metadata": {
+      "$ref": "./paths/blin/metadata.json"
+    },
+    "/blin": {
+      "$ref": "./paths/blin.json"
+    },
+    "/blin/count": {
+      "$ref": "./paths/blin/count.json"
+    },
+    "/blin/{ID}": {
+      "$ref": "./paths/blin/%7BID%7D.json"
+    },
+    "/blin/report": {
+      "$ref": "./paths/blin/report.json"
+    },
+    "/blin/search": {
+      "$ref": "./paths/blin/search.json"
+    },
+    "/bcrumb/metadata": {
+      "$ref": "./paths/bcrumb/metadata.json"
+    },
+    "/bcrumb": {
+      "$ref": "./paths/bcrumb.json"
+    },
+    "/bcrumb/{ID}": {
+      "$ref": "./paths/bcrumb/%7BID%7D.json"
+    },
+    "/bcrumb/getObjectHierarchy": {
+      "$ref": "./paths/bcrumb/getObjectHierarchy.json"
+    },
+    "/bcrumb/{ID}/getObjectHierarchy": {
+      "$ref": "./paths/bcrumb/%7BID%7D/getObjectHierarchy.json"
+    },
+    "/bill/metadata": {
+      "$ref": "./paths/bill/metadata.json"
+    },
+    "/bill": {
+      "$ref": "./paths/bill.json"
+    },
+    "/bill/count": {
+      "$ref": "./paths/bill/count.json"
+    },
+    "/bill/{ID}": {
+      "$ref": "./paths/bill/%7BID%7D.json"
+    },
+    "/bill/report": {
+      "$ref": "./paths/bill/report.json"
+    },
+    "/bill/search": {
+      "$ref": "./paths/bill/search.json"
+    },
+    "/bill/calculateDataExtension": {
+      "$ref": "./paths/bill/calculateDataExtension.json"
+    },
+    "/bill/{ID}/calculateDataExtension": {
+      "$ref": "./paths/bill/%7BID%7D/calculateDataExtension.json"
+    },
+    "/bghr/metadata": {
+      "$ref": "./paths/bghr/metadata.json"
+    },
+    "/bghr": {
+      "$ref": "./paths/bghr.json"
+    },
+    "/bghr/{ID}": {
+      "$ref": "./paths/bghr/%7BID%7D.json"
+    },
+    "/bghr/search": {
+      "$ref": "./paths/bghr/search.json"
+    },
+    "/bdnevt/metadata": {
+      "$ref": "./paths/bdnevt/metadata.json"
+    },
+    "/bdnevt/count": {
+      "$ref": "./paths/bdnevt/count.json"
+    },
+    "/bdnevt/{ID}": {
+      "$ref": "./paths/bdnevt/%7BID%7D.json"
+    },
+    "/bdnevt/report": {
+      "$ref": "./paths/bdnevt/report.json"
+    },
+    "/bdnevt/search": {
+      "$ref": "./paths/bdnevt/search.json"
+    },
+    "/calent/metadata": {
+      "$ref": "./paths/calent/metadata.json"
+    },
+    "/calent": {
+      "$ref": "./paths/calent.json"
+    },
+    "/calent/count": {
+      "$ref": "./paths/calent/count.json"
+    },
+    "/calent/{ID}": {
+      "$ref": "./paths/calent/%7BID%7D.json"
+    },
+    "/calent/report": {
+      "$ref": "./paths/calent/report.json"
+    },
+    "/calent/search": {
+      "$ref": "./paths/calent/search.json"
+    },
+    "/ceeref/metadata": {
+      "$ref": "./paths/ceeref/metadata.json"
+    },
+    "/ceeref/count": {
+      "$ref": "./paths/ceeref/count.json"
+    },
+    "/ceeref/{ID}": {
+      "$ref": "./paths/ceeref/%7BID%7D.json"
+    },
+    "/ceeref/report": {
+      "$ref": "./paths/ceeref/report.json"
+    },
+    "/ceeref/search": {
+      "$ref": "./paths/ceeref/search.json"
+    },
+    "/calsec/metadata": {
+      "$ref": "./paths/calsec/metadata.json"
+    },
+    "/calsec": {
+      "$ref": "./paths/calsec.json"
+    },
+    "/calsec/count": {
+      "$ref": "./paths/calsec/count.json"
+    },
+    "/calsec/{ID}": {
+      "$ref": "./paths/calsec/%7BID%7D.json"
+    },
+    "/calsec/report": {
+      "$ref": "./paths/calsec/report.json"
+    },
+    "/calsec/search": {
+      "$ref": "./paths/calsec/search.json"
+    },
+    "/calsec/getConcatenatedExpressionForm": {
+      "$ref": "./paths/calsec/getConcatenatedExpressionForm.json"
+    },
+    "/calsec/{ID}/getConcatenatedExpressionForm": {
+      "$ref": "./paths/calsec/%7BID%7D/getConcatenatedExpressionForm.json"
+    },
+    "/calsec/getPrettyExpressionForm": {
+      "$ref": "./paths/calsec/getPrettyExpressionForm.json"
+    },
+    "/calsec/{ID}/getPrettyExpressionForm": {
+      "$ref": "./paths/calsec/%7BID%7D/getPrettyExpressionForm.json"
+    },
+    "/calptl/metadata": {
+      "$ref": "./paths/calptl/metadata.json"
+    },
+    "/calptl": {
+      "$ref": "./paths/calptl.json"
+    },
+    "/calptl/count": {
+      "$ref": "./paths/calptl/count.json"
+    },
+    "/calptl/{ID}": {
+      "$ref": "./paths/calptl/%7BID%7D.json"
+    },
+    "/calptl/report": {
+      "$ref": "./paths/calptl/report.json"
+    },
+    "/calptl/search": {
+      "$ref": "./paths/calptl/search.json"
+    },
+    "/catacr/metadata": {
+      "$ref": "./paths/catacr/metadata.json"
+    },
+    "/catacr": {
+      "$ref": "./paths/catacr.json"
+    },
+    "/catacr/count": {
+      "$ref": "./paths/catacr/count.json"
+    },
+    "/catacr/{ID}": {
+      "$ref": "./paths/catacr/%7BID%7D.json"
+    },
+    "/catacr/report": {
+      "$ref": "./paths/catacr/report.json"
+    },
+    "/catacr/search": {
+      "$ref": "./paths/catacr/search.json"
+    },
+    "/ctgy/metadata": {
+      "$ref": "./paths/ctgy/metadata.json"
+    },
+    "/ctgy": {
+      "$ref": "./paths/ctgy.json"
+    },
+    "/ctgy/count": {
+      "$ref": "./paths/ctgy/count.json"
+    },
+    "/ctgy/{ID}": {
+      "$ref": "./paths/ctgy/%7BID%7D.json"
+    },
+    "/ctgy/report": {
+      "$ref": "./paths/ctgy/report.json"
+    },
+    "/ctgy/search": {
+      "$ref": "./paths/ctgy/search.json"
+    },
+    "/ctgy/assignCategories": {
+      "$ref": "./paths/ctgy/assignCategories.json"
+    },
+    "/ctgy/{ID}/assignCategories": {
+      "$ref": "./paths/ctgy/%7BID%7D/assignCategories.json"
+    },
+    "/ctgy/assignCategory": {
+      "$ref": "./paths/ctgy/assignCategory.json"
+    },
+    "/ctgy/{ID}/assignCategory": {
+      "$ref": "./paths/ctgy/%7BID%7D/assignCategory.json"
+    },
+    "/ctgy/getCascadingRules": {
+      "$ref": "./paths/ctgy/getCascadingRules.json"
+    },
+    "/ctgy/{ID}/getCascadingRules": {
+      "$ref": "./paths/ctgy/%7BID%7D/getCascadingRules.json"
+    },
+    "/ctgy/isObjectFrozenInPendingApprovalStatus": {
+      "$ref": "./paths/ctgy/isObjectFrozenInPendingApprovalStatus.json"
+    },
+    "/ctgy/{ID}/isObjectFrozenInPendingApprovalStatus": {
+      "$ref": "./paths/ctgy/%7BID%7D/isObjectFrozenInPendingApprovalStatus.json"
+    },
+    "/ctgy/reorderCategories": {
+      "$ref": "./paths/ctgy/reorderCategories.json"
+    },
+    "/ctgy/{ID}/reorderCategories": {
+      "$ref": "./paths/ctgy/%7BID%7D/reorderCategories.json"
+    },
+    "/ctgy/unassignCategories": {
+      "$ref": "./paths/ctgy/unassignCategories.json"
+    },
+    "/ctgy/{ID}/unassignCategories": {
+      "$ref": "./paths/ctgy/%7BID%7D/unassignCategories.json"
+    },
+    "/ctgy/unassignCategory": {
+      "$ref": "./paths/ctgy/unassignCategory.json"
+    },
+    "/ctgy/{ID}/unassignCategory": {
+      "$ref": "./paths/ctgy/%7BID%7D/unassignCategory.json"
+    },
+    "/ctcsrl/metadata": {
+      "$ref": "./paths/ctcsrl/metadata.json"
+    },
+    "/ctcsrm/metadata": {
+      "$ref": "./paths/ctcsrm/metadata.json"
+    },
+    "/ctgpex/metadata": {
+      "$ref": "./paths/ctgpex/metadata.json"
+    },
+    "/ctgypa/metadata": {
+      "$ref": "./paths/ctgypa/metadata.json"
+    },
+    "/cxthp/metadata": {
+      "$ref": "./paths/cxthp/metadata.json"
+    },
+    "/cxthp/count": {
+      "$ref": "./paths/cxthp/count.json"
+    },
+    "/cxthp/{ID}": {
+      "$ref": "./paths/cxthp/%7BID%7D.json"
+    },
+    "/cxthp/report": {
+      "$ref": "./paths/cxthp/report.json"
+    },
+    "/cxthp/search": {
+      "$ref": "./paths/cxthp/search.json"
+    },
+    "/cmpy/metadata": {
+      "$ref": "./paths/cmpy/metadata.json"
+    },
+    "/cmpy": {
+      "$ref": "./paths/cmpy.json"
+    },
+    "/cmpy/count": {
+      "$ref": "./paths/cmpy/count.json"
+    },
+    "/cmpy/{ID}": {
+      "$ref": "./paths/cmpy/%7BID%7D.json"
+    },
+    "/cmpy/replace": {
+      "$ref": "./paths/cmpy/replace.json"
+    },
+    "/cmpy/{ID}/replace": {
+      "$ref": "./paths/cmpy/%7BID%7D/replace.json"
+    },
+    "/cmpy/report": {
+      "$ref": "./paths/cmpy/report.json"
+    },
+    "/cmpy/search": {
+      "$ref": "./paths/cmpy/search.json"
+    },
+    "/cmpy/calculateDataExtension": {
+      "$ref": "./paths/cmpy/calculateDataExtension.json"
+    },
+    "/cmpy/{ID}/calculateDataExtension": {
+      "$ref": "./paths/cmpy/%7BID%7D/calculateDataExtension.json"
+    },
+    "/cstem/metadata": {
+      "$ref": "./paths/cstem/metadata.json"
+    },
+    "/cstem": {
+      "$ref": "./paths/cstem.json"
+    },
+    "/cstem/count": {
+      "$ref": "./paths/cstem/count.json"
+    },
+    "/cstem/{ID}": {
+      "$ref": "./paths/cstem/%7BID%7D.json"
+    },
+    "/cstem/report": {
+      "$ref": "./paths/cstem/report.json"
+    },
+    "/cstem/search": {
+      "$ref": "./paths/cstem/search.json"
+    },
+    "/cstem/getDefaultOpTaskConditionEnum": {
+      "$ref": "./paths/cstem/getDefaultOpTaskConditionEnum.json"
+    },
+    "/cstem/{ID}/getDefaultOpTaskConditionEnum": {
+      "$ref": "./paths/cstem/%7BID%7D/getDefaultOpTaskConditionEnum.json"
+    },
+    "/cstem/getDefaultOpTaskPriorityEnum": {
+      "$ref": "./paths/cstem/getDefaultOpTaskPriorityEnum.json"
+    },
+    "/cstem/{ID}/getDefaultOpTaskPriorityEnum": {
+      "$ref": "./paths/cstem/%7BID%7D/getDefaultOpTaskPriorityEnum.json"
+    },
+    "/cstem/getDefaultProjectConditionEnum": {
+      "$ref": "./paths/cstem/getDefaultProjectConditionEnum.json"
+    },
+    "/cstem/{ID}/getDefaultProjectConditionEnum": {
+      "$ref": "./paths/cstem/%7BID%7D/getDefaultProjectConditionEnum.json"
+    },
+    "/cstem/getDefaultProjectStatusEnum": {
+      "$ref": "./paths/cstem/getDefaultProjectStatusEnum.json"
+    },
+    "/cstem/{ID}/getDefaultProjectStatusEnum": {
+      "$ref": "./paths/cstem/%7BID%7D/getDefaultProjectStatusEnum.json"
+    },
+    "/cstem/getDefaultSeverityEnum": {
+      "$ref": "./paths/cstem/getDefaultSeverityEnum.json"
+    },
+    "/cstem/{ID}/getDefaultSeverityEnum": {
+      "$ref": "./paths/cstem/%7BID%7D/getDefaultSeverityEnum.json"
+    },
+    "/cstem/getDefaultTaskConditionEnum": {
+      "$ref": "./paths/cstem/getDefaultTaskConditionEnum.json"
+    },
+    "/cstem/{ID}/getDefaultTaskConditionEnum": {
+      "$ref": "./paths/cstem/%7BID%7D/getDefaultTaskConditionEnum.json"
+    },
+    "/cstem/getDefaultTaskPriorityEnum": {
+      "$ref": "./paths/cstem/getDefaultTaskPriorityEnum.json"
+    },
+    "/cstem/{ID}/getDefaultTaskPriorityEnum": {
+      "$ref": "./paths/cstem/%7BID%7D/getDefaultTaskPriorityEnum.json"
+    },
+    "/cstem/getGroupDefaultProjectStatus": {
+      "$ref": "./paths/cstem/getGroupDefaultProjectStatus.json"
+    },
+    "/cstem/{ID}/getGroupDefaultProjectStatus": {
+      "$ref": "./paths/cstem/%7BID%7D/getGroupDefaultProjectStatus.json"
+    },
+    "/cstem/isPossibleToUnlockStatus": {
+      "$ref": "./paths/cstem/isPossibleToUnlockStatus.json"
+    },
+    "/cstem/{ID}/isPossibleToUnlockStatus": {
+      "$ref": "./paths/cstem/%7BID%7D/isPossibleToUnlockStatus.json"
+    },
+    "/ltmcl/metadata": {
+      "$ref": "./paths/ltmcl/metadata.json"
+    },
+    "/ltmcl": {
+      "$ref": "./paths/ltmcl.json"
+    },
+    "/ltmcl/count": {
+      "$ref": "./paths/ltmcl/count.json"
+    },
+    "/ltmcl/{ID}": {
+      "$ref": "./paths/ltmcl/%7BID%7D.json"
+    },
+    "/ltmcl/report": {
+      "$ref": "./paths/ltmcl/report.json"
+    },
+    "/ltmcl/search": {
+      "$ref": "./paths/ltmcl/search.json"
+    },
+    "/ltmcl/checkDelete": {
+      "$ref": "./paths/ltmcl/checkDelete.json"
+    },
+    "/ltmcl/{ID}/checkDelete": {
+      "$ref": "./paths/ltmcl/%7BID%7D/checkDelete.json"
+    },
+    "/ltmcl/inUseByOtherLayoutTemplates": {
+      "$ref": "./paths/ltmcl/inUseByOtherLayoutTemplates.json"
+    },
+    "/ltmcl/{ID}/inUseByOtherLayoutTemplates": {
+      "$ref": "./paths/ltmcl/%7BID%7D/inUseByOtherLayoutTemplates.json"
+    },
+    "/ltmcl/removeCustomLabel": {
+      "$ref": "./paths/ltmcl/removeCustomLabel.json"
+    },
+    "/ltmcl/{ID}/removeCustomLabel": {
+      "$ref": "./paths/ltmcl/%7BID%7D/removeCustomLabel.json"
+    },
+    "/cstqrt/metadata": {
+      "$ref": "./paths/cstqrt/metadata.json"
+    },
+    "/cstqrt": {
+      "$ref": "./paths/cstqrt.json"
+    },
+    "/cstqrt/count": {
+      "$ref": "./paths/cstqrt/count.json"
+    },
+    "/cstqrt/{ID}": {
+      "$ref": "./paths/cstqrt/%7BID%7D.json"
+    },
+    "/cstqrt/report": {
+      "$ref": "./paths/cstqrt/report.json"
+    },
+    "/cstqrt/search": {
+      "$ref": "./paths/cstqrt/search.json"
+    },
+    "/diag/metadata": {
+      "$ref": "./paths/diag/metadata.json"
+    },
+    "/custpr/metadata": {
+      "$ref": "./paths/custpr/metadata.json"
+    },
+    "/custpr": {
+      "$ref": "./paths/custpr.json"
+    },
+    "/custpr/{ID}": {
+      "$ref": "./paths/custpr/%7BID%7D.json"
+    },
+    "/custpr/search": {
+      "$ref": "./paths/custpr/search.json"
+    },
+    "/custpr/getTimesheetPreferences": {
+      "$ref": "./paths/custpr/getTimesheetPreferences.json"
+    },
+    "/custpr/{ID}/getTimesheetPreferences": {
+      "$ref": "./paths/custpr/%7BID%7D/getTimesheetPreferences.json"
+    },
+    "/custpr/setTimesheetPreferences": {
+      "$ref": "./paths/custpr/setTimesheetPreferences.json"
+    },
+    "/custpr/{ID}/setTimesheetPreferences": {
+      "$ref": "./paths/custpr/%7BID%7D/setTimesheetPreferences.json"
+    },
+    "/dmetal/metadata": {
+      "$ref": "./paths/dmetal/metadata.json"
+    },
+    "/dmetal": {
+      "$ref": "./paths/dmetal.json"
+    },
+    "/dmetal/count": {
+      "$ref": "./paths/dmetal/count.json"
+    },
+    "/dmetal/{ID}": {
+      "$ref": "./paths/dmetal/%7BID%7D.json"
+    },
+    "/dmetal/report": {
+      "$ref": "./paths/dmetal/report.json"
+    },
+    "/dmetal/search": {
+      "$ref": "./paths/dmetal/search.json"
+    },
+    "/dmetag/metadata": {
+      "$ref": "./paths/dmetag/metadata.json"
+    },
+    "/dmetag": {
+      "$ref": "./paths/dmetag.json"
+    },
+    "/dmetag/count": {
+      "$ref": "./paths/dmetag/count.json"
+    },
+    "/dmetag/{ID}": {
+      "$ref": "./paths/dmetag/%7BID%7D.json"
+    },
+    "/dmetag/report": {
+      "$ref": "./paths/dmetag/report.json"
+    },
+    "/dmetag/search": {
+      "$ref": "./paths/dmetag/search.json"
+    },
+    "/dmetag/getMetadataDetailsForDocument": {
+      "$ref": "./paths/dmetag/getMetadataDetailsForDocument.json"
+    },
+    "/dmetag/{ID}/getMetadataDetailsForDocument": {
+      "$ref": "./paths/dmetag/%7BID%7D/getMetadataDetailsForDocument.json"
+    },
+    "/dmetag/getMetadataForDocument": {
+      "$ref": "./paths/dmetag/getMetadataForDocument.json"
+    },
+    "/dmetag/{ID}/getMetadataForDocument": {
+      "$ref": "./paths/dmetag/%7BID%7D/getMetadataForDocument.json"
+    },
+    "/docapl/metadata": {
+      "$ref": "./paths/docapl/metadata.json"
+    },
+    "/docapl": {
+      "$ref": "./paths/docapl.json"
+    },
+    "/docapl/count": {
+      "$ref": "./paths/docapl/count.json"
+    },
+    "/docapl/{ID}": {
+      "$ref": "./paths/docapl/%7BID%7D.json"
+    },
+    "/docapl/report": {
+      "$ref": "./paths/docapl/report.json"
+    },
+    "/docapl/search": {
+      "$ref": "./paths/docapl/search.json"
+    },
+    "/docfdr/metadata": {
+      "$ref": "./paths/docfdr/metadata.json"
+    },
+    "/docfdr": {
+      "$ref": "./paths/docfdr.json"
+    },
+    "/docfdr/count": {
+      "$ref": "./paths/docfdr/count.json"
+    },
+    "/docfdr/{ID}": {
+      "$ref": "./paths/docfdr/%7BID%7D.json"
+    },
+    "/docfdr/report": {
+      "$ref": "./paths/docfdr/report.json"
+    },
+    "/docfdr/search": {
+      "$ref": "./paths/docfdr/search.json"
+    },
+    "/docfdr/getFolderSizeInBytes": {
+      "$ref": "./paths/docfdr/getFolderSizeInBytes.json"
+    },
+    "/docfdr/{ID}/getFolderSizeInBytes": {
+      "$ref": "./paths/docfdr/%7BID%7D/getFolderSizeInBytes.json"
+    },
+    "/docfdr/isLinkedFolder": {
+      "$ref": "./paths/docfdr/isLinkedFolder.json"
+    },
+    "/docfdr/{ID}/isLinkedFolder": {
+      "$ref": "./paths/docfdr/%7BID%7D/isLinkedFolder.json"
+    },
+    "/docfdr/isSmartFolder": {
+      "$ref": "./paths/docfdr/isSmartFolder.json"
+    },
+    "/docfdr/{ID}/isSmartFolder": {
+      "$ref": "./paths/docfdr/%7BID%7D/isSmartFolder.json"
+    },
+    "/docfdr/unlinkFolders": {
+      "$ref": "./paths/docfdr/unlinkFolders.json"
+    },
+    "/docfdr/{ID}/unlinkFolders": {
+      "$ref": "./paths/docfdr/%7BID%7D/unlinkFolders.json"
+    },
+    "/docreq/metadata": {
+      "$ref": "./paths/docreq/metadata.json"
+    },
+    "/docreq": {
+      "$ref": "./paths/docreq.json"
+    },
+    "/docreq/count": {
+      "$ref": "./paths/docreq/count.json"
+    },
+    "/docreq/{ID}": {
+      "$ref": "./paths/docreq/%7BID%7D.json"
+    },
+    "/docreq/report": {
+      "$ref": "./paths/docreq/report.json"
+    },
+    "/docreq/search": {
+      "$ref": "./paths/docreq/search.json"
+    },
+    "/docv/metadata": {
+      "$ref": "./paths/docv/metadata.json"
+    },
+    "/docv": {
+      "$ref": "./paths/docv.json"
+    },
+    "/docv/count": {
+      "$ref": "./paths/docv/count.json"
+    },
+    "/docv/{ID}": {
+      "$ref": "./paths/docv/%7BID%7D.json"
+    },
+    "/docv/report": {
+      "$ref": "./paths/docv/report.json"
+    },
+    "/docv/search": {
+      "$ref": "./paths/docv/search.json"
+    },
+    "/docv/getDocumentReviewerDecision": {
+      "$ref": "./paths/docv/getDocumentReviewerDecision.json"
+    },
+    "/docv/{ID}/getDocumentReviewerDecision": {
+      "$ref": "./paths/docv/%7BID%7D/getDocumentReviewerDecision.json"
+    },
+    "/docv/getProofingTokens": {
+      "$ref": "./paths/docv/getProofingTokens.json"
+    },
+    "/docv/{ID}/getProofingTokens": {
+      "$ref": "./paths/docv/%7BID%7D/getProofingTokens.json"
+    },
+    "/docv/setDocumentReviewerDecision": {
+      "$ref": "./paths/docv/setDocumentReviewerDecision.json"
+    },
+    "/docv/{ID}/setDocumentReviewerDecision": {
+      "$ref": "./paths/docv/%7BID%7D/setDocumentReviewerDecision.json"
+    },
+    "/endr/metadata": {
+      "$ref": "./paths/endr/metadata.json"
+    },
+    "/endr": {
+      "$ref": "./paths/endr.json"
+    },
+    "/endr/count": {
+      "$ref": "./paths/endr/count.json"
+    },
+    "/endr/{ID}": {
+      "$ref": "./paths/endr/%7BID%7D.json"
+    },
+    "/endr/report": {
+      "$ref": "./paths/endr/report.json"
+    },
+    "/endr/search": {
+      "$ref": "./paths/endr/search.json"
+    },
+    "/endr/like": {
+      "$ref": "./paths/endr/like.json"
+    },
+    "/endr/{ID}/like": {
+      "$ref": "./paths/endr/%7BID%7D/like.json"
+    },
+    "/endr/unlike": {
+      "$ref": "./paths/endr/unlike.json"
+    },
+    "/endr/{ID}/unlike": {
+      "$ref": "./paths/endr/%7BID%7D/unlike.json"
+    },
+    "/ews/metadata": {
+      "$ref": "./paths/ews/metadata.json"
+    },
+    "/endshr/metadata": {
+      "$ref": "./paths/endshr/metadata.json"
+    },
+    "/endshr": {
+      "$ref": "./paths/endshr.json"
+    },
+    "/endshr/count": {
+      "$ref": "./paths/endshr/count.json"
+    },
+    "/endshr/{ID}": {
+      "$ref": "./paths/endshr/%7BID%7D.json"
+    },
+    "/endshr/report": {
+      "$ref": "./paths/endshr/report.json"
+    },
+    "/endshr/search": {
+      "$ref": "./paths/endshr/search.json"
+    },
+    "/exrate/metadata": {
+      "$ref": "./paths/exrate/metadata.json"
+    },
+    "/exrate": {
+      "$ref": "./paths/exrate.json"
+    },
+    "/exrate/count": {
+      "$ref": "./paths/exrate/count.json"
+    },
+    "/exrate/{ID}": {
+      "$ref": "./paths/exrate/%7BID%7D.json"
+    },
+    "/exrate/report": {
+      "$ref": "./paths/exrate/report.json"
+    },
+    "/exrate/search": {
+      "$ref": "./paths/exrate/search.json"
+    },
+    "/expns/metadata": {
+      "$ref": "./paths/expns/metadata.json"
+    },
+    "/expns": {
+      "$ref": "./paths/expns.json"
+    },
+    "/expns/count": {
+      "$ref": "./paths/expns/count.json"
+    },
+    "/expns/{ID}": {
+      "$ref": "./paths/expns/%7BID%7D.json"
+    },
+    "/expns/report": {
+      "$ref": "./paths/expns/report.json"
+    },
+    "/expns/search": {
+      "$ref": "./paths/expns/search.json"
+    },
+    "/expns/calculateDataExtension": {
+      "$ref": "./paths/expns/calculateDataExtension.json"
+    },
+    "/expns/{ID}/calculateDataExtension": {
+      "$ref": "./paths/expns/%7BID%7D/calculateDataExtension.json"
+    },
+    "/expns/move": {
+      "$ref": "./paths/expns/move.json"
+    },
+    "/expns/{ID}/move": {
+      "$ref": "./paths/expns/%7BID%7D/move.json"
+    },
+    "/exptyp/metadata": {
+      "$ref": "./paths/exptyp/metadata.json"
+    },
+    "/exptyp": {
+      "$ref": "./paths/exptyp.json"
+    },
+    "/exptyp/count": {
+      "$ref": "./paths/exptyp/count.json"
+    },
+    "/exptyp/{ID}": {
+      "$ref": "./paths/exptyp/%7BID%7D.json"
+    },
+    "/exptyp/replace": {
+      "$ref": "./paths/exptyp/replace.json"
+    },
+    "/exptyp/{ID}/replace": {
+      "$ref": "./paths/exptyp/%7BID%7D/replace.json"
+    },
+    "/exptyp/report": {
+      "$ref": "./paths/exptyp/report.json"
+    },
+    "/exptyp/search": {
+      "$ref": "./paths/exptyp/search.json"
+    },
+    "/authtk/metadata": {
+      "$ref": "./paths/authtk/metadata.json"
+    },
+    "/authtk": {
+      "$ref": "./paths/authtk.json"
+    },
+    "/authtk/count": {
+      "$ref": "./paths/authtk/count.json"
+    },
+    "/authtk/{ID}": {
+      "$ref": "./paths/authtk/%7BID%7D.json"
+    },
+    "/authtk/report": {
+      "$ref": "./paths/authtk/report.json"
+    },
+    "/authtk/search": {
+      "$ref": "./paths/authtk/search.json"
+    },
+    "/extcfg/metadata": {
+      "$ref": "./paths/extcfg/metadata.json"
+    },
+    "/extcfg": {
+      "$ref": "./paths/extcfg.json"
+    },
+    "/extcfg/count": {
+      "$ref": "./paths/extcfg/count.json"
+    },
+    "/extcfg/{ID}": {
+      "$ref": "./paths/extcfg/%7BID%7D.json"
+    },
+    "/extcfg/report": {
+      "$ref": "./paths/extcfg/report.json"
+    },
+    "/extcfg/search": {
+      "$ref": "./paths/extcfg/search.json"
+    },
+    "/findat/metadata": {
+      "$ref": "./paths/findat/metadata.json"
+    },
+    "/findat/count": {
+      "$ref": "./paths/findat/count.json"
+    },
+    "/findat/{ID}": {
+      "$ref": "./paths/findat/%7BID%7D.json"
+    },
+    "/findat/report": {
+      "$ref": "./paths/findat/report.json"
+    },
+    "/findat/search": {
+      "$ref": "./paths/findat/search.json"
+    },
+    "/fvrite/metadata": {
+      "$ref": "./paths/fvrite/metadata.json"
+    },
+    "/fvrite": {
+      "$ref": "./paths/fvrite.json"
+    },
+    "/fvrite/count": {
+      "$ref": "./paths/fvrite/count.json"
+    },
+    "/fvrite/{ID}": {
+      "$ref": "./paths/fvrite/%7BID%7D.json"
+    },
+    "/fvrite/report": {
+      "$ref": "./paths/fvrite/report.json"
+    },
+    "/fvrite/search": {
+      "$ref": "./paths/fvrite/search.json"
+    },
+    "/hour/metadata": {
+      "$ref": "./paths/hour/metadata.json"
+    },
+    "/hour": {
+      "$ref": "./paths/hour.json"
+    },
+    "/hour/count": {
+      "$ref": "./paths/hour/count.json"
+    },
+    "/hour/{ID}": {
+      "$ref": "./paths/hour/%7BID%7D.json"
+    },
+    "/hour/report": {
+      "$ref": "./paths/hour/report.json"
+    },
+    "/hour/search": {
+      "$ref": "./paths/hour/search.json"
+    },
+    "/hourt/metadata": {
+      "$ref": "./paths/hourt/metadata.json"
+    },
+    "/hourt": {
+      "$ref": "./paths/hourt.json"
+    },
+    "/hourt/count": {
+      "$ref": "./paths/hourt/count.json"
+    },
+    "/hourt/{ID}": {
+      "$ref": "./paths/hourt/%7BID%7D.json"
+    },
+    "/hourt/replace": {
+      "$ref": "./paths/hourt/replace.json"
+    },
+    "/hourt/{ID}/replace": {
+      "$ref": "./paths/hourt/%7BID%7D/replace.json"
+    },
+    "/hourt/report": {
+      "$ref": "./paths/hourt/report.json"
+    },
+    "/hourt/search": {
+      "$ref": "./paths/hourt/search.json"
+    },
+    "/iprage/metadata": {
+      "$ref": "./paths/iprage/metadata.json"
+    },
+    "/iprage": {
+      "$ref": "./paths/iprage.json"
+    },
+    "/iprage/count": {
+      "$ref": "./paths/iprage/count.json"
+    },
+    "/iprage/{ID}": {
+      "$ref": "./paths/iprage/%7BID%7D.json"
+    },
+    "/iprage/report": {
+      "$ref": "./paths/iprage/report.json"
+    },
+    "/iprage/search": {
+      "$ref": "./paths/iprage/search.json"
+    },
+    "/itrn/metadata": {
+      "$ref": "./paths/itrn/metadata.json"
+    },
+    "/itrn": {
+      "$ref": "./paths/itrn.json"
+    },
+    "/itrn/count": {
+      "$ref": "./paths/itrn/count.json"
+    },
+    "/itrn/{ID}": {
+      "$ref": "./paths/itrn/%7BID%7D.json"
+    },
+    "/itrn/report": {
+      "$ref": "./paths/itrn/report.json"
+    },
+    "/itrn/search": {
+      "$ref": "./paths/itrn/search.json"
+    },
+    "/itrn/moveIssues": {
+      "$ref": "./paths/itrn/moveIssues.json"
+    },
+    "/itrn/{ID}/moveIssues": {
+      "$ref": "./paths/itrn/%7BID%7D/moveIssues.json"
+    },
+    "/itrn/moveStories": {
+      "$ref": "./paths/itrn/moveStories.json"
+    },
+    "/itrn/{ID}/moveStories": {
+      "$ref": "./paths/itrn/%7BID%7D/moveStories.json"
+    },
+    "/jrnle/metadata": {
+      "$ref": "./paths/jrnle/metadata.json"
+    },
+    "/jrnle/count": {
+      "$ref": "./paths/jrnle/count.json"
+    },
+    "/jrnle/{ID}": {
+      "$ref": "./paths/jrnle/%7BID%7D.json"
+    },
+    "/jrnle/report": {
+      "$ref": "./paths/jrnle/report.json"
+    },
+    "/jrnle/search": {
+      "$ref": "./paths/jrnle/search.json"
+    },
+    "/jrnle": {
+      "$ref": "./paths/jrnle.json"
+    },
+    "/jrnle/like": {
+      "$ref": "./paths/jrnle/like.json"
+    },
+    "/jrnle/{ID}/like": {
+      "$ref": "./paths/jrnle/%7BID%7D/like.json"
+    },
+    "/jrnle/unlike": {
+      "$ref": "./paths/jrnle/unlike.json"
+    },
+    "/jrnle/{ID}/unlike": {
+      "$ref": "./paths/jrnle/%7BID%7D/unlike.json"
+    },
+    "/knbnbd/metadata": {
+      "$ref": "./paths/knbnbd/metadata.json"
+    },
+    "/knbnbd": {
+      "$ref": "./paths/knbnbd.json"
+    },
+    "/knbnbd/count": {
+      "$ref": "./paths/knbnbd/count.json"
+    },
+    "/knbnbd/{ID}": {
+      "$ref": "./paths/knbnbd/%7BID%7D.json"
+    },
+    "/knbnbd/report": {
+      "$ref": "./paths/knbnbd/report.json"
+    },
+    "/knbnbd/search": {
+      "$ref": "./paths/knbnbd/search.json"
+    },
+    "/lytmpl/metadata": {
+      "$ref": "./paths/lytmpl/metadata.json"
+    },
+    "/lytmpl": {
+      "$ref": "./paths/lytmpl.json"
+    },
+    "/lytmpl/count": {
+      "$ref": "./paths/lytmpl/count.json"
+    },
+    "/lytmpl/{ID}": {
+      "$ref": "./paths/lytmpl/%7BID%7D.json"
+    },
+    "/lytmpl/report": {
+      "$ref": "./paths/lytmpl/report.json"
+    },
+    "/lytmpl/search": {
+      "$ref": "./paths/lytmpl/search.json"
+    },
+    "/ltglmt/metadata": {
+      "$ref": "./paths/ltglmt/metadata.json"
+    },
+    "/like/metadata": {
+      "$ref": "./paths/like/metadata.json"
+    },
+    "/like/count": {
+      "$ref": "./paths/like/count.json"
+    },
+    "/like/{ID}": {
+      "$ref": "./paths/like/%7BID%7D.json"
+    },
+    "/like/report": {
+      "$ref": "./paths/like/report.json"
+    },
+    "/like/search": {
+      "$ref": "./paths/like/search.json"
+    },
+    "/lnkfdr/metadata": {
+      "$ref": "./paths/lnkfdr/metadata.json"
+    },
+    "/lgacrl/metadata": {
+      "$ref": "./paths/lgacrl/metadata.json"
+    },
+    "/lgaarl/metadata": {
+      "$ref": "./paths/lgaarl/metadata.json"
+    },
+    "/lgaset/metadata": {
+      "$ref": "./paths/lgaset/metadata.json"
+    },
+    "/msgarg/metadata": {
+      "$ref": "./paths/msgarg/metadata.json"
+    },
+    "/mile/metadata": {
+      "$ref": "./paths/mile/metadata.json"
+    },
+    "/mile": {
+      "$ref": "./paths/mile.json"
+    },
+    "/mile/count": {
+      "$ref": "./paths/mile/count.json"
+    },
+    "/mile/{ID}": {
+      "$ref": "./paths/mile/%7BID%7D.json"
+    },
+    "/mile/report": {
+      "$ref": "./paths/mile/report.json"
+    },
+    "/mile/search": {
+      "$ref": "./paths/mile/search.json"
+    },
+    "/mpath/metadata": {
+      "$ref": "./paths/mpath/metadata.json"
+    },
+    "/mpath": {
+      "$ref": "./paths/mpath.json"
+    },
+    "/mpath/count": {
+      "$ref": "./paths/mpath/count.json"
+    },
+    "/mpath/{ID}": {
+      "$ref": "./paths/mpath/%7BID%7D.json"
+    },
+    "/mpath/report": {
+      "$ref": "./paths/mpath/report.json"
+    },
+    "/mpath/search": {
+      "$ref": "./paths/mpath/search.json"
+    },
+    "/nonwkd/metadata": {
+      "$ref": "./paths/nonwkd/metadata.json"
+    },
+    "/note/metadata": {
+      "$ref": "./paths/note/metadata.json"
+    },
+    "/note": {
+      "$ref": "./paths/note.json"
+    },
+    "/note/count": {
+      "$ref": "./paths/note/count.json"
+    },
+    "/note/{ID}": {
+      "$ref": "./paths/note/%7BID%7D.json"
+    },
+    "/note/report": {
+      "$ref": "./paths/note/report.json"
+    },
+    "/note/search": {
+      "$ref": "./paths/note/search.json"
+    },
+    "/note/like": {
+      "$ref": "./paths/note/like.json"
+    },
+    "/note/{ID}/like": {
+      "$ref": "./paths/note/%7BID%7D/like.json"
+    },
+    "/note/unlike": {
+      "$ref": "./paths/note/unlike.json"
+    },
+    "/note/{ID}/unlike": {
+      "$ref": "./paths/note/%7BID%7D/unlike.json"
+    },
+    "/ntag/metadata": {
+      "$ref": "./paths/ntag/metadata.json"
+    },
+    "/ntag/count": {
+      "$ref": "./paths/ntag/count.json"
+    },
+    "/ntag/{ID}": {
+      "$ref": "./paths/ntag/%7BID%7D.json"
+    },
+    "/ntag/report": {
+      "$ref": "./paths/ntag/report.json"
+    },
+    "/ntag/search": {
+      "$ref": "./paths/ntag/search.json"
+    },
+    "/objcat/metadata": {
+      "$ref": "./paths/objcat/metadata.json"
+    },
+    "/objcat/count": {
+      "$ref": "./paths/objcat/count.json"
+    },
+    "/objcat/{ID}": {
+      "$ref": "./paths/objcat/%7BID%7D.json"
+    },
+    "/objcat/report": {
+      "$ref": "./paths/objcat/report.json"
+    },
+    "/objcat/search": {
+      "$ref": "./paths/objcat/search.json"
+    },
+    "/param/metadata": {
+      "$ref": "./paths/param/metadata.json"
+    },
+    "/param": {
+      "$ref": "./paths/param.json"
+    },
+    "/param/count": {
+      "$ref": "./paths/param/count.json"
+    },
+    "/param/{ID}": {
+      "$ref": "./paths/param/%7BID%7D.json"
+    },
+    "/param/report": {
+      "$ref": "./paths/param/report.json"
+    },
+    "/param/search": {
+      "$ref": "./paths/param/search.json"
+    },
+    "/prmdtx/metadata": {
+      "$ref": "./paths/prmdtx/metadata.json"
+    },
+    "/popt/metadata": {
+      "$ref": "./paths/popt/metadata.json"
+    },
+    "/popt": {
+      "$ref": "./paths/popt.json"
+    },
+    "/popt/count": {
+      "$ref": "./paths/popt/count.json"
+    },
+    "/popt/{ID}": {
+      "$ref": "./paths/popt/%7BID%7D.json"
+    },
+    "/popt/report": {
+      "$ref": "./paths/popt/report.json"
+    },
+    "/popt/search": {
+      "$ref": "./paths/popt/search.json"
+    },
+    "/pgrp/metadata": {
+      "$ref": "./paths/pgrp/metadata.json"
+    },
+    "/pgrp": {
+      "$ref": "./paths/pgrp.json"
+    },
+    "/pgrp/count": {
+      "$ref": "./paths/pgrp/count.json"
+    },
+    "/pgrp/{ID}": {
+      "$ref": "./paths/pgrp/%7BID%7D.json"
+    },
+    "/pgrp/report": {
+      "$ref": "./paths/pgrp/report.json"
+    },
+    "/pgrp/search": {
+      "$ref": "./paths/pgrp/search.json"
+    },
+    "/ptlsec/metadata": {
+      "$ref": "./paths/ptlsec/metadata.json"
+    },
+    "/ptlsec": {
+      "$ref": "./paths/ptlsec.json"
+    },
+    "/ptlsec/count": {
+      "$ref": "./paths/ptlsec/count.json"
+    },
+    "/ptlsec/{ID}": {
+      "$ref": "./paths/ptlsec/%7BID%7D.json"
+    },
+    "/ptlsec/report": {
+      "$ref": "./paths/ptlsec/report.json"
+    },
+    "/ptlsec/search": {
+      "$ref": "./paths/ptlsec/search.json"
+    },
+    "/ptlsec/exportFusionChartToPDF": {
+      "$ref": "./paths/ptlsec/exportFusionChartToPDF.json"
+    },
+    "/ptlsec/{ID}/exportFusionChartToPDF": {
+      "$ref": "./paths/ptlsec/%7BID%7D/exportFusionChartToPDF.json"
+    },
+    "/ptlsec/getPK": {
+      "$ref": "./paths/ptlsec/getPK.json"
+    },
+    "/ptlsec/{ID}/getPK": {
+      "$ref": "./paths/ptlsec/%7BID%7D/getPK.json"
+    },
+    "/ptlsec/getReportFromCache": {
+      "$ref": "./paths/ptlsec/getReportFromCache.json"
+    },
+    "/ptlsec/{ID}/getReportFromCache": {
+      "$ref": "./paths/ptlsec/%7BID%7D/getReportFromCache.json"
+    },
+    "/ptlsec/isReportFilterable": {
+      "$ref": "./paths/ptlsec/isReportFilterable.json"
+    },
+    "/ptlsec/{ID}/isReportFilterable": {
+      "$ref": "./paths/ptlsec/%7BID%7D/isReportFilterable.json"
+    },
+    "/ptlsec/linkCustomer": {
+      "$ref": "./paths/ptlsec/linkCustomer.json"
+    },
+    "/ptlsec/{ID}/linkCustomer": {
+      "$ref": "./paths/ptlsec/%7BID%7D/linkCustomer.json"
+    },
+    "/ptlsec/migratePortalSectionsPPMToAnaconda": {
+      "$ref": "./paths/ptlsec/migratePortalSectionsPPMToAnaconda.json"
+    },
+    "/ptlsec/{ID}/migratePortalSectionsPPMToAnaconda": {
+      "$ref": "./paths/ptlsec/%7BID%7D/migratePortalSectionsPPMToAnaconda.json"
+    },
+    "/ptlsec/unlinkCustomer": {
+      "$ref": "./paths/ptlsec/unlinkCustomer.json"
+    },
+    "/ptlsec/{ID}/unlinkCustomer": {
+      "$ref": "./paths/ptlsec/%7BID%7D/unlinkCustomer.json"
+    },
+    "/plslsv/metadata": {
+      "$ref": "./paths/plslsv/metadata.json"
+    },
+    "/plslsv/count": {
+      "$ref": "./paths/plslsv/count.json"
+    },
+    "/plslsv/{ID}": {
+      "$ref": "./paths/plslsv/%7BID%7D.json"
+    },
+    "/plslsv/report": {
+      "$ref": "./paths/plslsv/report.json"
+    },
+    "/plslsv/search": {
+      "$ref": "./paths/plslsv/search.json"
+    },
+    "/ptltab/metadata": {
+      "$ref": "./paths/ptltab/metadata.json"
+    },
+    "/ptltab": {
+      "$ref": "./paths/ptltab.json"
+    },
+    "/ptltab/count": {
+      "$ref": "./paths/ptltab/count.json"
+    },
+    "/ptltab/{ID}": {
+      "$ref": "./paths/ptltab/%7BID%7D.json"
+    },
+    "/ptltab/report": {
+      "$ref": "./paths/ptltab/report.json"
+    },
+    "/ptltab/search": {
+      "$ref": "./paths/ptltab/search.json"
+    },
+    "/ptltab/advancedCopy": {
+      "$ref": "./paths/ptltab/advancedCopy.json"
+    },
+    "/ptltab/{ID}/advancedCopy": {
+      "$ref": "./paths/ptltab/%7BID%7D/advancedCopy.json"
+    },
+    "/ptltab/exportDashboard": {
+      "$ref": "./paths/ptltab/exportDashboard.json"
+    },
+    "/ptltab/{ID}/exportDashboard": {
+      "$ref": "./paths/ptltab/%7BID%7D/exportDashboard.json"
+    },
+    "/ptltab/migrateCustomTabUserPrefs": {
+      "$ref": "./paths/ptltab/migrateCustomTabUserPrefs.json"
+    },
+    "/ptltab/{ID}/migrateCustomTabUserPrefs": {
+      "$ref": "./paths/ptltab/%7BID%7D/migrateCustomTabUserPrefs.json"
+    },
+    "/plsvst/metadata": {
+      "$ref": "./paths/plsvst/metadata.json"
+    },
+    "/plsvst/count": {
+      "$ref": "./paths/plsvst/count.json"
+    },
+    "/plsvst/{ID}": {
+      "$ref": "./paths/plsvst/%7BID%7D.json"
+    },
+    "/plsvst/report": {
+      "$ref": "./paths/plsvst/report.json"
+    },
+    "/plsvst/search": {
+      "$ref": "./paths/plsvst/search.json"
+    },
+    "/port/metadata": {
+      "$ref": "./paths/port/metadata.json"
+    },
+    "/port": {
+      "$ref": "./paths/port.json"
+    },
+    "/port/count": {
+      "$ref": "./paths/port/count.json"
+    },
+    "/port/{ID}": {
+      "$ref": "./paths/port/%7BID%7D.json"
+    },
+    "/port/report": {
+      "$ref": "./paths/port/report.json"
+    },
+    "/port/search": {
+      "$ref": "./paths/port/search.json"
+    },
+    "/port/calculateDataExtension": {
+      "$ref": "./paths/port/calculateDataExtension.json"
+    },
+    "/port/{ID}/calculateDataExtension": {
+      "$ref": "./paths/port/%7BID%7D/calculateDataExtension.json"
+    },
+    "/prtbsc/metadata": {
+      "$ref": "./paths/prtbsc/metadata.json"
+    },
+    "/prgm/metadata": {
+      "$ref": "./paths/prgm/metadata.json"
+    },
+    "/prgm": {
+      "$ref": "./paths/prgm.json"
+    },
+    "/prgm/count": {
+      "$ref": "./paths/prgm/count.json"
+    },
+    "/prgm/{ID}": {
+      "$ref": "./paths/prgm/%7BID%7D.json"
+    },
+    "/prgm/report": {
+      "$ref": "./paths/prgm/report.json"
+    },
+    "/prgm/search": {
+      "$ref": "./paths/prgm/search.json"
+    },
+    "/prgm/calculateDataExtension": {
+      "$ref": "./paths/prgm/calculateDataExtension.json"
+    },
+    "/prgm/{ID}/calculateDataExtension": {
+      "$ref": "./paths/prgm/%7BID%7D/calculateDataExtension.json"
+    },
+    "/prgm/move": {
+      "$ref": "./paths/prgm/move.json"
+    },
+    "/prgm/{ID}/move": {
+      "$ref": "./paths/prgm/%7BID%7D/move.json"
+    },
+    "/pred/metadata": {
+      "$ref": "./paths/pred/metadata.json"
+    },
+    "/prtu/metadata": {
+      "$ref": "./paths/prtu/metadata.json"
+    },
+    "/pteam/metadata": {
+      "$ref": "./paths/pteam/metadata.json"
+    },
+    "/proof/metadata": {
+      "$ref": "./paths/proof/metadata.json"
+    },
+    "/proof/search": {
+      "$ref": "./paths/proof/search.json"
+    },
+    "/prfact/metadata": {
+      "$ref": "./paths/prfact/metadata.json"
+    },
+    "/prfact": {
+      "$ref": "./paths/prfact.json"
+    },
+    "/prfact/count": {
+      "$ref": "./paths/prfact/count.json"
+    },
+    "/prfact/{ID}": {
+      "$ref": "./paths/prfact/%7BID%7D.json"
+    },
+    "/prfact/report": {
+      "$ref": "./paths/prfact/report.json"
+    },
+    "/prfact/search": {
+      "$ref": "./paths/prfact/search.json"
+    },
+    "/prfapl/metadata": {
+      "$ref": "./paths/prfapl/metadata.json"
+    },
+    "/prfapl/count": {
+      "$ref": "./paths/prfapl/count.json"
+    },
+    "/prfapl/{ID}": {
+      "$ref": "./paths/prfapl/%7BID%7D.json"
+    },
+    "/prfapl/report": {
+      "$ref": "./paths/prfapl/report.json"
+    },
+    "/prfapl/search": {
+      "$ref": "./paths/prfapl/search.json"
+    },
+    "/prfas/metadata": {
+      "$ref": "./paths/prfas/metadata.json"
+    },
+    "/prfmd/metadata": {
+      "$ref": "./paths/prfmd/metadata.json"
+    },
+    "/qued/metadata": {
+      "$ref": "./paths/qued/metadata.json"
+    },
+    "/qued/count": {
+      "$ref": "./paths/qued/count.json"
+    },
+    "/qued/{ID}": {
+      "$ref": "./paths/qued/%7BID%7D.json"
+    },
+    "/qued/report": {
+      "$ref": "./paths/qued/report.json"
+    },
+    "/qued/search": {
+      "$ref": "./paths/qued/search.json"
+    },
+    "/qued": {
+      "$ref": "./paths/qued.json"
+    },
+    "/qued/getQueueDefTree": {
+      "$ref": "./paths/qued/getQueueDefTree.json"
+    },
+    "/qued/{ID}/getQueueDefTree": {
+      "$ref": "./paths/qued/%7BID%7D/getQueueDefTree.json"
+    },
+    "/qued/searchByPath": {
+      "$ref": "./paths/qued/searchByPath.json"
+    },
+    "/qued/{ID}/searchByPath": {
+      "$ref": "./paths/qued/%7BID%7D/searchByPath.json"
+    },
+    "/quet/metadata": {
+      "$ref": "./paths/quet/metadata.json"
+    },
+    "/quet": {
+      "$ref": "./paths/quet.json"
+    },
+    "/quet/count": {
+      "$ref": "./paths/quet/count.json"
+    },
+    "/quet/{ID}": {
+      "$ref": "./paths/quet/%7BID%7D.json"
+    },
+    "/quet/report": {
+      "$ref": "./paths/quet/report.json"
+    },
+    "/quet/search": {
+      "$ref": "./paths/quet/search.json"
+    },
+    "/quetgp/metadata": {
+      "$ref": "./paths/quetgp/metadata.json"
+    },
+    "/quetgp": {
+      "$ref": "./paths/quetgp.json"
+    },
+    "/quetgp/count": {
+      "$ref": "./paths/quetgp/count.json"
+    },
+    "/quetgp/{ID}": {
+      "$ref": "./paths/quetgp/%7BID%7D.json"
+    },
+    "/quetgp/report": {
+      "$ref": "./paths/quetgp/report.json"
+    },
+    "/quetgp/search": {
+      "$ref": "./paths/quetgp/search.json"
+    },
+    "/rate/metadata": {
+      "$ref": "./paths/rate/metadata.json"
+    },
+    "/rate": {
+      "$ref": "./paths/rate.json"
+    },
+    "/rate/count": {
+      "$ref": "./paths/rate/count.json"
+    },
+    "/rate/{ID}": {
+      "$ref": "./paths/rate/%7BID%7D.json"
+    },
+    "/rate/report": {
+      "$ref": "./paths/rate/report.json"
+    },
+    "/rate/search": {
+      "$ref": "./paths/rate/search.json"
+    },
+    "/rate/setRatesForRole": {
+      "$ref": "./paths/rate/setRatesForRole.json"
+    },
+    "/rate/{ID}/setRatesForRole": {
+      "$ref": "./paths/rate/%7BID%7D/setRatesForRole.json"
+    },
+    "/recent/metadata": {
+      "$ref": "./paths/recent/metadata.json"
+    },
+    "/recent": {
+      "$ref": "./paths/recent.json"
+    },
+    "/recent/count": {
+      "$ref": "./paths/recent/count.json"
+    },
+    "/recent/{ID}": {
+      "$ref": "./paths/recent/%7BID%7D.json"
+    },
+    "/recent/report": {
+      "$ref": "./paths/recent/report.json"
+    },
+    "/recent/search": {
+      "$ref": "./paths/recent/search.json"
+    },
+    "/recent/updateLastViewedObject": {
+      "$ref": "./paths/recent/updateLastViewedObject.json"
+    },
+    "/recent/{ID}/updateLastViewedObject": {
+      "$ref": "./paths/recent/%7BID%7D/updateLastViewedObject.json"
+    },
+    "/rptfdr/metadata": {
+      "$ref": "./paths/rptfdr/metadata.json"
+    },
+    "/rpbghr/metadata": {
+      "$ref": "./paths/rpbghr/metadata.json"
+    },
+    "/rpbghr/count": {
+      "$ref": "./paths/rpbghr/count.json"
+    },
+    "/rpbghr/{ID}": {
+      "$ref": "./paths/rpbghr/%7BID%7D.json"
+    },
+    "/rpbghr/report": {
+      "$ref": "./paths/rpbghr/report.json"
+    },
+    "/rpbghr/search": {
+      "$ref": "./paths/rpbghr/search.json"
+    },
+    "/resvt/metadata": {
+      "$ref": "./paths/resvt/metadata.json"
+    },
+    "/resvt": {
+      "$ref": "./paths/resvt.json"
+    },
+    "/resvt/count": {
+      "$ref": "./paths/resvt/count.json"
+    },
+    "/resvt/{ID}": {
+      "$ref": "./paths/resvt/%7BID%7D.json"
+    },
+    "/resvt/report": {
+      "$ref": "./paths/resvt/report.json"
+    },
+    "/resvt/search": {
+      "$ref": "./paths/resvt/search.json"
+    },
+    "/rsallo/metadata": {
+      "$ref": "./paths/rsallo/metadata.json"
+    },
+    "/rsallo": {
+      "$ref": "./paths/rsallo.json"
+    },
+    "/rsallo/count": {
+      "$ref": "./paths/rsallo/count.json"
+    },
+    "/rsallo/{ID}": {
+      "$ref": "./paths/rsallo/%7BID%7D.json"
+    },
+    "/rsallo/report": {
+      "$ref": "./paths/rsallo/report.json"
+    },
+    "/rsallo/search": {
+      "$ref": "./paths/rsallo/search.json"
+    },
+    "/rpfl/metadata": {
+      "$ref": "./paths/rpfl/metadata.json"
+    },
+    "/rpfl": {
+      "$ref": "./paths/rpfl.json"
+    },
+    "/rpfl/count": {
+      "$ref": "./paths/rpfl/count.json"
+    },
+    "/rpfl/{ID}": {
+      "$ref": "./paths/rpfl/%7BID%7D.json"
+    },
+    "/rpfl/report": {
+      "$ref": "./paths/rpfl/report.json"
+    },
+    "/rpfl/search": {
+      "$ref": "./paths/rpfl/search.json"
+    },
+    "/resmgr/metadata": {
+      "$ref": "./paths/resmgr/metadata.json"
+    },
+    "/resmgr": {
+      "$ref": "./paths/resmgr.json"
+    },
+    "/resmgr/count": {
+      "$ref": "./paths/resmgr/count.json"
+    },
+    "/resmgr/{ID}": {
+      "$ref": "./paths/resmgr/%7BID%7D.json"
+    },
+    "/resmgr/report": {
+      "$ref": "./paths/resmgr/report.json"
+    },
+    "/resmgr/search": {
+      "$ref": "./paths/resmgr/search.json"
+    },
+    "/rspool/metadata": {
+      "$ref": "./paths/rspool/metadata.json"
+    },
+    "/rspool": {
+      "$ref": "./paths/rspool.json"
+    },
+    "/rspool/count": {
+      "$ref": "./paths/rspool/count.json"
+    },
+    "/rspool/{ID}": {
+      "$ref": "./paths/rspool/%7BID%7D.json"
+    },
+    "/rspool/report": {
+      "$ref": "./paths/rspool/report.json"
+    },
+    "/rspool/search": {
+      "$ref": "./paths/rspool/search.json"
+    },
+    "/rhnote/metadata": {
+      "$ref": "./paths/rhnote/metadata.json"
+    },
+    "/rhnote/count": {
+      "$ref": "./paths/rhnote/count.json"
+    },
+    "/rhnote/{ID}": {
+      "$ref": "./paths/rhnote/%7BID%7D.json"
+    },
+    "/rhnote/report": {
+      "$ref": "./paths/rhnote/report.json"
+    },
+    "/rhnote/search": {
+      "$ref": "./paths/rhnote/search.json"
+    },
+    "/rchval/metadata": {
+      "$ref": "./paths/rchval/metadata.json"
+    },
+    "/risk/metadata": {
+      "$ref": "./paths/risk/metadata.json"
+    },
+    "/risk": {
+      "$ref": "./paths/risk.json"
+    },
+    "/risk/count": {
+      "$ref": "./paths/risk/count.json"
+    },
+    "/risk/{ID}": {
+      "$ref": "./paths/risk/%7BID%7D.json"
+    },
+    "/risk/report": {
+      "$ref": "./paths/risk/report.json"
+    },
+    "/risk/search": {
+      "$ref": "./paths/risk/search.json"
+    },
+    "/role/metadata": {
+      "$ref": "./paths/role/metadata.json"
+    },
+    "/role": {
+      "$ref": "./paths/role.json"
+    },
+    "/role/count": {
+      "$ref": "./paths/role/count.json"
+    },
+    "/role/{ID}": {
+      "$ref": "./paths/role/%7BID%7D.json"
+    },
+    "/role/replace": {
+      "$ref": "./paths/role/replace.json"
+    },
+    "/role/{ID}/replace": {
+      "$ref": "./paths/role/%7BID%7D/replace.json"
+    },
+    "/role/report": {
+      "$ref": "./paths/role/report.json"
+    },
+    "/role/search": {
+      "$ref": "./paths/role/search.json"
+    },
+    "/rsktyp/metadata": {
+      "$ref": "./paths/rsktyp/metadata.json"
+    },
+    "/rsktyp": {
+      "$ref": "./paths/rsktyp.json"
+    },
+    "/rsktyp/count": {
+      "$ref": "./paths/rsktyp/count.json"
+    },
+    "/rsktyp/{ID}": {
+      "$ref": "./paths/rsktyp/%7BID%7D.json"
+    },
+    "/rsktyp/replace": {
+      "$ref": "./paths/rsktyp/replace.json"
+    },
+    "/rsktyp/{ID}/replace": {
+      "$ref": "./paths/rsktyp/%7BID%7D/replace.json"
+    },
+    "/rsktyp/report": {
+      "$ref": "./paths/rsktyp/report.json"
+    },
+    "/rsktyp/search": {
+      "$ref": "./paths/rsktyp/search.json"
+    },
+    "/rscont/metadata": {
+      "$ref": "./paths/rscont/metadata.json"
+    },
+    "/rscont": {
+      "$ref": "./paths/rscont.json"
+    },
+    "/rscont/count": {
+      "$ref": "./paths/rscont/count.json"
+    },
+    "/rscont/{ID}": {
+      "$ref": "./paths/rscont/%7BID%7D.json"
+    },
+    "/rscont/report": {
+      "$ref": "./paths/rscont/report.json"
+    },
+    "/rscont/search": {
+      "$ref": "./paths/rscont/search.json"
+    },
+    "/rrul/metadata": {
+      "$ref": "./paths/rrul/metadata.json"
+    },
+    "/rrul": {
+      "$ref": "./paths/rrul.json"
+    },
+    "/rrul/count": {
+      "$ref": "./paths/rrul/count.json"
+    },
+    "/rrul/{ID}": {
+      "$ref": "./paths/rrul/%7BID%7D.json"
+    },
+    "/rrul/report": {
+      "$ref": "./paths/rrul/report.json"
+    },
+    "/rrul/search": {
+      "$ref": "./paths/rrul/search.json"
+    },
+    "/rspl/metadata": {
+      "$ref": "./paths/rspl/metadata.json"
+    },
+    "/rspl": {
+      "$ref": "./paths/rspl.json"
+    },
+    "/rspl/count": {
+      "$ref": "./paths/rspl/count.json"
+    },
+    "/rspl/{ID}": {
+      "$ref": "./paths/rspl/%7BID%7D.json"
+    },
+    "/rspl/report": {
+      "$ref": "./paths/rspl/report.json"
+    },
+    "/rspl/search": {
+      "$ref": "./paths/rspl/search.json"
+    },
+    "/schrep/metadata": {
+      "$ref": "./paths/schrep/metadata.json"
+    },
+    "/schrep": {
+      "$ref": "./paths/schrep.json"
+    },
+    "/schrep/count": {
+      "$ref": "./paths/schrep/count.json"
+    },
+    "/schrep/{ID}": {
+      "$ref": "./paths/schrep/%7BID%7D.json"
+    },
+    "/schrep/report": {
+      "$ref": "./paths/schrep/report.json"
+    },
+    "/schrep/search": {
+      "$ref": "./paths/schrep/search.json"
+    },
+    "/schrep/sendReportDeliveryNow": {
+      "$ref": "./paths/schrep/sendReportDeliveryNow.json"
+    },
+    "/schrep/{ID}/sendReportDeliveryNow": {
+      "$ref": "./paths/schrep/%7BID%7D/sendReportDeliveryNow.json"
+    },
+    "/sched/metadata": {
+      "$ref": "./paths/sched/metadata.json"
+    },
+    "/sched": {
+      "$ref": "./paths/sched.json"
+    },
+    "/sched/count": {
+      "$ref": "./paths/sched/count.json"
+    },
+    "/sched/{ID}": {
+      "$ref": "./paths/sched/%7BID%7D.json"
+    },
+    "/sched/replace": {
+      "$ref": "./paths/sched/replace.json"
+    },
+    "/sched/{ID}/replace": {
+      "$ref": "./paths/sched/%7BID%7D/replace.json"
+    },
+    "/sched/report": {
+      "$ref": "./paths/sched/report.json"
+    },
+    "/sched/search": {
+      "$ref": "./paths/sched/search.json"
+    },
+    "/sched/getEarliestWorkTimeOfDay": {
+      "$ref": "./paths/sched/getEarliestWorkTimeOfDay.json"
+    },
+    "/sched/{ID}/getEarliestWorkTimeOfDay": {
+      "$ref": "./paths/sched/%7BID%7D/getEarliestWorkTimeOfDay.json"
+    },
+    "/sched/getLatestWorkTimeOfDay": {
+      "$ref": "./paths/sched/getLatestWorkTimeOfDay.json"
+    },
+    "/sched/{ID}/getLatestWorkTimeOfDay": {
+      "$ref": "./paths/sched/%7BID%7D/getLatestWorkTimeOfDay.json"
+    },
+    "/sched/getNextCompletionDate": {
+      "$ref": "./paths/sched/getNextCompletionDate.json"
+    },
+    "/sched/{ID}/getNextCompletionDate": {
+      "$ref": "./paths/sched/%7BID%7D/getNextCompletionDate.json"
+    },
+    "/sched/getNextStartDate": {
+      "$ref": "./paths/sched/getNextStartDate.json"
+    },
+    "/sched/{ID}/getNextStartDate": {
+      "$ref": "./paths/sched/%7BID%7D/getNextStartDate.json"
+    },
+    "/score/metadata": {
+      "$ref": "./paths/score/metadata.json"
+    },
+    "/score": {
+      "$ref": "./paths/score.json"
+    },
+    "/score/count": {
+      "$ref": "./paths/score/count.json"
+    },
+    "/score/{ID}": {
+      "$ref": "./paths/score/%7BID%7D.json"
+    },
+    "/score/report": {
+      "$ref": "./paths/score/report.json"
+    },
+    "/score/search": {
+      "$ref": "./paths/score/search.json"
+    },
+    "/scans/metadata": {
+      "$ref": "./paths/scans/metadata.json"
+    },
+    "/scopt/metadata": {
+      "$ref": "./paths/scopt/metadata.json"
+    },
+    "/scoreq/metadata": {
+      "$ref": "./paths/scoreq/metadata.json"
+    },
+    "/spapvr/metadata": {
+      "$ref": "./paths/spapvr/metadata.json"
+    },
+    "/srcevt/metadata": {
+      "$ref": "./paths/srcevt/metadata.json"
+    },
+    "/subscr/metadata": {
+      "$ref": "./paths/subscr/metadata.json"
+    },
+    "/subscr": {
+      "$ref": "./paths/subscr.json"
+    },
+    "/subscr/count": {
+      "$ref": "./paths/subscr/count.json"
+    },
+    "/subscr/{ID}": {
+      "$ref": "./paths/subscr/%7BID%7D.json"
+    },
+    "/subscr/report": {
+      "$ref": "./paths/subscr/report.json"
+    },
+    "/subscr/search": {
+      "$ref": "./paths/subscr/search.json"
+    },
+    "/subscr/addSubscribers": {
+      "$ref": "./paths/subscr/addSubscribers.json"
+    },
+    "/subscr/{ID}/addSubscribers": {
+      "$ref": "./paths/subscr/%7BID%7D/addSubscribers.json"
+    },
+    "/subscr/removeSubscribers": {
+      "$ref": "./paths/subscr/removeSubscribers.json"
+    },
+    "/subscr/{ID}/removeSubscribers": {
+      "$ref": "./paths/subscr/%7BID%7D/removeSubscribers.json"
+    },
+    "/subscr/subscribes": {
+      "$ref": "./paths/subscr/subscribes.json"
+    },
+    "/subscr/{ID}/subscribes": {
+      "$ref": "./paths/subscr/%7BID%7D/subscribes.json"
+    },
+    "/subscr/unsubscribes": {
+      "$ref": "./paths/subscr/unsubscribes.json"
+    },
+    "/subscr/{ID}/unsubscribes": {
+      "$ref": "./paths/subscr/%7BID%7D/unsubscribes.json"
+    },
+    "/teamob/metadata": {
+      "$ref": "./paths/teamob/metadata.json"
+    },
+    "/teamob": {
+      "$ref": "./paths/teamob.json"
+    },
+    "/teamob/count": {
+      "$ref": "./paths/teamob/count.json"
+    },
+    "/teamob/{ID}": {
+      "$ref": "./paths/teamob/%7BID%7D.json"
+    },
+    "/teamob/report": {
+      "$ref": "./paths/teamob/report.json"
+    },
+    "/teamob/search": {
+      "$ref": "./paths/teamob/search.json"
+    },
+    "/teammb/metadata": {
+      "$ref": "./paths/teammb/metadata.json"
+    },
+    "/tmpl/metadata": {
+      "$ref": "./paths/tmpl/metadata.json"
+    },
+    "/tmpl": {
+      "$ref": "./paths/tmpl.json"
+    },
+    "/tmpl/count": {
+      "$ref": "./paths/tmpl/count.json"
+    },
+    "/tmpl/{ID}": {
+      "$ref": "./paths/tmpl/%7BID%7D.json"
+    },
+    "/tmpl/report": {
+      "$ref": "./paths/tmpl/report.json"
+    },
+    "/tmpl/search": {
+      "$ref": "./paths/tmpl/search.json"
+    },
+    "/tmpl/calculateDataExtension": {
+      "$ref": "./paths/tmpl/calculateDataExtension.json"
+    },
+    "/tmpl/{ID}/calculateDataExtension": {
+      "$ref": "./paths/tmpl/%7BID%7D/calculateDataExtension.json"
+    },
+    "/tmpl/calculateTimeline": {
+      "$ref": "./paths/tmpl/calculateTimeline.json"
+    },
+    "/tmpl/{ID}/calculateTimeline": {
+      "$ref": "./paths/tmpl/%7BID%7D/calculateTimeline.json"
+    },
+    "/tassgn/metadata": {
+      "$ref": "./paths/tassgn/metadata.json"
+    },
+    "/tassgn": {
+      "$ref": "./paths/tassgn.json"
+    },
+    "/tassgn/count": {
+      "$ref": "./paths/tassgn/count.json"
+    },
+    "/tassgn/{ID}": {
+      "$ref": "./paths/tassgn/%7BID%7D.json"
+    },
+    "/tassgn/report": {
+      "$ref": "./paths/tassgn/report.json"
+    },
+    "/tassgn/search": {
+      "$ref": "./paths/tassgn/search.json"
+    },
+    "/tpred/metadata": {
+      "$ref": "./paths/tpred/metadata.json"
+    },
+    "/ttsk/metadata": {
+      "$ref": "./paths/ttsk/metadata.json"
+    },
+    "/ttsk": {
+      "$ref": "./paths/ttsk.json"
+    },
+    "/ttsk/count": {
+      "$ref": "./paths/ttsk/count.json"
+    },
+    "/ttsk/{ID}": {
+      "$ref": "./paths/ttsk/%7BID%7D.json"
+    },
+    "/ttsk/report": {
+      "$ref": "./paths/ttsk/report.json"
+    },
+    "/ttsk/search": {
+      "$ref": "./paths/ttsk/search.json"
+    },
+    "/ttsk/bulkCopy": {
+      "$ref": "./paths/ttsk/bulkCopy.json"
+    },
+    "/ttsk/{ID}/bulkCopy": {
+      "$ref": "./paths/ttsk/%7BID%7D/bulkCopy.json"
+    },
+    "/ttsk/bulkMove": {
+      "$ref": "./paths/ttsk/bulkMove.json"
+    },
+    "/ttsk/{ID}/bulkMove": {
+      "$ref": "./paths/ttsk/%7BID%7D/bulkMove.json"
+    },
+    "/ttsk/calculateDataExtension": {
+      "$ref": "./paths/ttsk/calculateDataExtension.json"
+    },
+    "/ttsk/{ID}/calculateDataExtension": {
+      "$ref": "./paths/ttsk/%7BID%7D/calculateDataExtension.json"
+    },
+    "/ttsk/move": {
+      "$ref": "./paths/ttsk/move.json"
+    },
+    "/ttsk/{ID}/move": {
+      "$ref": "./paths/ttsk/%7BID%7D/move.json"
+    },
+    "/tmtu/metadata": {
+      "$ref": "./paths/tmtu/metadata.json"
+    },
+    "/tteam/metadata": {
+      "$ref": "./paths/tteam/metadata.json"
+    },
+    "/tshet/metadata": {
+      "$ref": "./paths/tshet/metadata.json"
+    },
+    "/tshet": {
+      "$ref": "./paths/tshet.json"
+    },
+    "/tshet/count": {
+      "$ref": "./paths/tshet/count.json"
+    },
+    "/tshet/{ID}": {
+      "$ref": "./paths/tshet/%7BID%7D.json"
+    },
+    "/tshet/report": {
+      "$ref": "./paths/tshet/report.json"
+    },
+    "/tshet/search": {
+      "$ref": "./paths/tshet/search.json"
+    },
+    "/tspro/metadata": {
+      "$ref": "./paths/tspro/metadata.json"
+    },
+    "/tspro": {
+      "$ref": "./paths/tspro.json"
+    },
+    "/tspro/count": {
+      "$ref": "./paths/tspro/count.json"
+    },
+    "/tspro/{ID}": {
+      "$ref": "./paths/tspro/%7BID%7D.json"
+    },
+    "/tspro/replace": {
+      "$ref": "./paths/tspro/replace.json"
+    },
+    "/tspro/{ID}/replace": {
+      "$ref": "./paths/tspro/%7BID%7D/replace.json"
+    },
+    "/tspro/report": {
+      "$ref": "./paths/tspro/report.json"
+    },
+    "/tspro/search": {
+      "$ref": "./paths/tspro/search.json"
+    },
+    "/uigb/metadata": {
+      "$ref": "./paths/uigb/metadata.json"
+    },
+    "/uigb": {
+      "$ref": "./paths/uigb.json"
+    },
+    "/uigb/count": {
+      "$ref": "./paths/uigb/count.json"
+    },
+    "/uigb/{ID}": {
+      "$ref": "./paths/uigb/%7BID%7D.json"
+    },
+    "/uigb/report": {
+      "$ref": "./paths/uigb/report.json"
+    },
+    "/uigb/search": {
+      "$ref": "./paths/uigb/search.json"
+    },
+    "/uift/metadata": {
+      "$ref": "./paths/uift/metadata.json"
+    },
+    "/uift": {
+      "$ref": "./paths/uift.json"
+    },
+    "/uift/count": {
+      "$ref": "./paths/uift/count.json"
+    },
+    "/uift/{ID}": {
+      "$ref": "./paths/uift/%7BID%7D.json"
+    },
+    "/uift/report": {
+      "$ref": "./paths/uift/report.json"
+    },
+    "/uift/search": {
+      "$ref": "./paths/uift/search.json"
+    },
+    "/uitmpl/metadata": {
+      "$ref": "./paths/uitmpl/metadata.json"
+    },
+    "/uitmpl/count": {
+      "$ref": "./paths/uitmpl/count.json"
+    },
+    "/uitmpl/{ID}": {
+      "$ref": "./paths/uitmpl/%7BID%7D.json"
+    },
+    "/uitmpl/report": {
+      "$ref": "./paths/uitmpl/report.json"
+    },
+    "/uitmpl/search": {
+      "$ref": "./paths/uitmpl/search.json"
+    },
+    "/uitmpl": {
+      "$ref": "./paths/uitmpl.json"
+    },
+    "/uitmpl/migrateCustomersAllLayoutTemplates": {
+      "$ref": "./paths/uitmpl/migrateCustomersAllLayoutTemplates.json"
+    },
+    "/uitmpl/{ID}/migrateCustomersAllLayoutTemplates": {
+      "$ref": "./paths/uitmpl/%7BID%7D/migrateCustomersAllLayoutTemplates.json"
+    },
+    "/uitmpl/migrateLayoutTemplates": {
+      "$ref": "./paths/uitmpl/migrateLayoutTemplates.json"
+    },
+    "/uitmpl/{ID}/migrateLayoutTemplates": {
+      "$ref": "./paths/uitmpl/%7BID%7D/migrateLayoutTemplates.json"
+    },
+    "/uivw/metadata": {
+      "$ref": "./paths/uivw/metadata.json"
+    },
+    "/uivw": {
+      "$ref": "./paths/uivw.json"
+    },
+    "/uivw/count": {
+      "$ref": "./paths/uivw/count.json"
+    },
+    "/uivw/{ID}": {
+      "$ref": "./paths/uivw/%7BID%7D.json"
+    },
+    "/uivw/report": {
+      "$ref": "./paths/uivw/report.json"
+    },
+    "/uivw/search": {
+      "$ref": "./paths/uivw/search.json"
+    },
+    "/update/metadata": {
+      "$ref": "./paths/update/metadata.json"
+    },
+    "/update": {
+      "$ref": "./paths/update.json"
+    },
+    "/update/{ID}": {
+      "$ref": "./paths/update/%7BID%7D.json"
+    },
+    "/update/auditSessionCount": {
+      "$ref": "./paths/update/auditSessionCount.json"
+    },
+    "/update/{ID}/auditSessionCount": {
+      "$ref": "./paths/update/%7BID%7D/auditSessionCount.json"
+    },
+    "/userac/metadata": {
+      "$ref": "./paths/userac/metadata.json"
+    },
+    "/userac/count": {
+      "$ref": "./paths/userac/count.json"
+    },
+    "/userac/{ID}": {
+      "$ref": "./paths/userac/%7BID%7D.json"
+    },
+    "/userac/report": {
+      "$ref": "./paths/userac/report.json"
+    },
+    "/userac/search": {
+      "$ref": "./paths/userac/search.json"
+    },
+    "/usravl/metadata": {
+      "$ref": "./paths/usravl/metadata.json"
+    },
+    "/usravl": {
+      "$ref": "./paths/usravl.json"
+    },
+    "/usravl/count": {
+      "$ref": "./paths/usravl/count.json"
+    },
+    "/usravl/{ID}": {
+      "$ref": "./paths/usravl/%7BID%7D.json"
+    },
+    "/usravl/report": {
+      "$ref": "./paths/usravl/report.json"
+    },
+    "/usravl/search": {
+      "$ref": "./paths/usravl/search.json"
+    },
+    "/usrdel/metadata": {
+      "$ref": "./paths/usrdel/metadata.json"
+    },
+    "/usrdel": {
+      "$ref": "./paths/usrdel.json"
+    },
+    "/usrdel/count": {
+      "$ref": "./paths/usrdel/count.json"
+    },
+    "/usrdel/{ID}": {
+      "$ref": "./paths/usrdel/%7BID%7D.json"
+    },
+    "/usrdel/report": {
+      "$ref": "./paths/usrdel/report.json"
+    },
+    "/usrdel/search": {
+      "$ref": "./paths/usrdel/search.json"
+    },
+    "/usrgps/metadata": {
+      "$ref": "./paths/usrgps/metadata.json"
+    },
+    "/uhccfg/metadata": {
+      "$ref": "./paths/uhccfg/metadata.json"
+    },
+    "/uhccfg": {
+      "$ref": "./paths/uhccfg.json"
+    },
+    "/uhccfg/count": {
+      "$ref": "./paths/uhccfg/count.json"
+    },
+    "/uhccfg/{ID}": {
+      "$ref": "./paths/uhccfg/%7BID%7D.json"
+    },
+    "/uhccfg/report": {
+      "$ref": "./paths/uhccfg/report.json"
+    },
+    "/uhccfg/search": {
+      "$ref": "./paths/uhccfg/search.json"
+    },
+    "/usrnot/metadata": {
+      "$ref": "./paths/usrnot/metadata.json"
+    },
+    "/usrnot": {
+      "$ref": "./paths/usrnot.json"
+    },
+    "/usrnot/count": {
+      "$ref": "./paths/usrnot/count.json"
+    },
+    "/usrnot/{ID}": {
+      "$ref": "./paths/usrnot/%7BID%7D.json"
+    },
+    "/usrnot/report": {
+      "$ref": "./paths/usrnot/report.json"
+    },
+    "/usrnot/search": {
+      "$ref": "./paths/usrnot/search.json"
+    },
+    "/usrnot/acknowledge": {
+      "$ref": "./paths/usrnot/acknowledge.json"
+    },
+    "/usrnot/{ID}/acknowledge": {
+      "$ref": "./paths/usrnot/%7BID%7D/acknowledge.json"
+    },
+    "/usrnot/acknowledgeAll": {
+      "$ref": "./paths/usrnot/acknowledgeAll.json"
+    },
+    "/usrnot/{ID}/acknowledgeAll": {
+      "$ref": "./paths/usrnot/%7BID%7D/acknowledgeAll.json"
+    },
+    "/usrnot/acknowledgeMany": {
+      "$ref": "./paths/usrnot/acknowledgeMany.json"
+    },
+    "/usrnot/{ID}/acknowledgeMany": {
+      "$ref": "./paths/usrnot/%7BID%7D/acknowledgeMany.json"
+    },
+    "/usrnot/acknowledgeMyNotifications": {
+      "$ref": "./paths/usrnot/acknowledgeMyNotifications.json"
+    },
+    "/usrnot/{ID}/acknowledgeMyNotifications": {
+      "$ref": "./paths/usrnot/%7BID%7D/acknowledgeMyNotifications.json"
+    },
+    "/usrnot/unacknowledge": {
+      "$ref": "./paths/usrnot/unacknowledge.json"
+    },
+    "/usrnot/{ID}/unacknowledge": {
+      "$ref": "./paths/usrnot/%7BID%7D/unacknowledge.json"
+    },
+    "/usrnot/unacknowledgeMany": {
+      "$ref": "./paths/usrnot/unacknowledgeMany.json"
+    },
+    "/usrnot/{ID}/unacknowledgeMany": {
+      "$ref": "./paths/usrnot/%7BID%7D/unacknowledgeMany.json"
+    },
+    "/usrnot/unacknowledgedAllObjectTypesCount": {
+      "$ref": "./paths/usrnot/unacknowledgedAllObjectTypesCount.json"
+    },
+    "/usrnot/{ID}/unacknowledgedAllObjectTypesCount": {
+      "$ref": "./paths/usrnot/%7BID%7D/unacknowledgedAllObjectTypesCount.json"
+    },
+    "/usrnot/unacknowledgedAnnouncementCount": {
+      "$ref": "./paths/usrnot/unacknowledgedAnnouncementCount.json"
+    },
+    "/usrnot/{ID}/unacknowledgedAnnouncementCount": {
+      "$ref": "./paths/usrnot/%7BID%7D/unacknowledgedAnnouncementCount.json"
+    },
+    "/usrnot/unacknowledgedCount": {
+      "$ref": "./paths/usrnot/unacknowledgedCount.json"
+    },
+    "/usrnot/{ID}/unacknowledgedCount": {
+      "$ref": "./paths/usrnot/%7BID%7D/unacknowledgedCount.json"
+    },
+    "/usop/metadata": {
+      "$ref": "./paths/usop/metadata.json"
+    },
+    "/usop/count": {
+      "$ref": "./paths/usop/count.json"
+    },
+    "/usop/{ID}": {
+      "$ref": "./paths/usop/%7BID%7D.json"
+    },
+    "/usop/report": {
+      "$ref": "./paths/usop/report.json"
+    },
+    "/usop/search": {
+      "$ref": "./paths/usop/search.json"
+    },
+    "/userpf/metadata": {
+      "$ref": "./paths/userpf/metadata.json"
+    },
+    "/userpf": {
+      "$ref": "./paths/userpf.json"
+    },
+    "/userpf/{ID}": {
+      "$ref": "./paths/userpf/%7BID%7D.json"
+    },
+    "/userpf/search": {
+      "$ref": "./paths/userpf/search.json"
+    },
+    "/usrrol/metadata": {
+      "$ref": "./paths/usrrol/metadata.json"
+    },
+    "/work/metadata": {
+      "$ref": "./paths/work/metadata.json"
+    },
+    "/work/count": {
+      "$ref": "./paths/work/count.json"
+    },
+    "/work/{ID}": {
+      "$ref": "./paths/work/%7BID%7D.json"
+    },
+    "/work/report": {
+      "$ref": "./paths/work/report.json"
+    },
+    "/work/search": {
+      "$ref": "./paths/work/search.json"
+    },
+    "/work": {
+      "$ref": "./paths/work.json"
+    },
+    "/work/getMyAccomplishmentsCount": {
+      "$ref": "./paths/work/getMyAccomplishmentsCount.json"
+    },
+    "/work/{ID}/getMyAccomplishmentsCount": {
+      "$ref": "./paths/work/%7BID%7D/getMyAccomplishmentsCount.json"
+    },
+    "/work/getMyWorkCount": {
+      "$ref": "./paths/work/getMyWorkCount.json"
+    },
+    "/work/{ID}/getMyWorkCount": {
+      "$ref": "./paths/work/%7BID%7D/getMyWorkCount.json"
+    },
+    "/work/getMyWorkCountFiltered": {
+      "$ref": "./paths/work/getMyWorkCountFiltered.json"
+    },
+    "/work/{ID}/getMyWorkCountFiltered": {
+      "$ref": "./paths/work/%7BID%7D/getMyWorkCountFiltered.json"
+    },
+    "/work/getWFHomeObjects": {
+      "$ref": "./paths/work/getWFHomeObjects.json"
+    },
+    "/work/{ID}/getWFHomeObjects": {
+      "$ref": "./paths/work/%7BID%7D/getWFHomeObjects.json"
+    },
+    "/work/getWFHomeObjectsFilterSortBy": {
+      "$ref": "./paths/work/getWFHomeObjectsFilterSortBy.json"
+    },
+    "/work/{ID}/getWFHomeObjectsFilterSortBy": {
+      "$ref": "./paths/work/%7BID%7D/getWFHomeObjectsFilterSortBy.json"
+    },
+    "/work/getWFHomeObjectsListWithoutDate": {
+      "$ref": "./paths/work/getWFHomeObjectsListWithoutDate.json"
+    },
+    "/work/{ID}/getWFHomeObjectsListWithoutDate": {
+      "$ref": "./paths/work/%7BID%7D/getWFHomeObjectsListWithoutDate.json"
+    },
+    "/work/getWFHomeObjectsProjectItemList": {
+      "$ref": "./paths/work/getWFHomeObjectsProjectItemList.json"
+    },
+    "/work/{ID}/getWFHomeObjectsProjectItemList": {
+      "$ref": "./paths/work/%7BID%7D/getWFHomeObjectsProjectItemList.json"
+    },
+    "/work/getWFHomeObjectsProjectList": {
+      "$ref": "./paths/work/getWFHomeObjectsProjectList.json"
+    },
+    "/work/{ID}/getWFHomeObjectsProjectList": {
+      "$ref": "./paths/work/%7BID%7D/getWFHomeObjectsProjectList.json"
+    },
+    "/work/getWorkRequestsCount": {
+      "$ref": "./paths/work/getWorkRequestsCount.json"
+    },
+    "/work/{ID}/getWorkRequestsCount": {
+      "$ref": "./paths/work/%7BID%7D/getWorkRequestsCount.json"
+    },
+    "/work/teamRequestCount": {
+      "$ref": "./paths/work/teamRequestCount.json"
+    },
+    "/work/{ID}/teamRequestCount": {
+      "$ref": "./paths/work/%7BID%7D/teamRequestCount.json"
+    },
+    "/work/teamRequestsCount": {
+      "$ref": "./paths/work/teamRequestsCount.json"
+    },
+    "/work/{ID}/teamRequestsCount": {
+      "$ref": "./paths/work/%7BID%7D/teamRequestsCount.json"
+    },
+    "/work/workItemStatusLabels": {
+      "$ref": "./paths/work/workItemStatusLabels.json"
+    },
+    "/work/{ID}/workItemStatusLabels": {
+      "$ref": "./paths/work/%7BID%7D/workItemStatusLabels.json"
+    },
+    "/wrkitm/metadata": {
+      "$ref": "./paths/wrkitm/metadata.json"
+    },
+    "/wrkitm/count": {
+      "$ref": "./paths/wrkitm/count.json"
+    },
+    "/wrkitm/{ID}": {
+      "$ref": "./paths/wrkitm/%7BID%7D.json"
+    },
+    "/wrkitm/report": {
+      "$ref": "./paths/wrkitm/report.json"
+    },
+    "/wrkitm/search": {
+      "$ref": "./paths/wrkitm/search.json"
+    },
+    "/wrkitm": {
+      "$ref": "./paths/wrkitm.json"
+    },
+    "/wrkitm/markViewed": {
+      "$ref": "./paths/wrkitm/markViewed.json"
+    },
+    "/wrkitm/{ID}/markViewed": {
+      "$ref": "./paths/wrkitm/%7BID%7D/markViewed.json"
+    },
+    "/group/metadata": {
+      "$ref": "./paths/group/metadata.json"
+    },
+    "/group": {
+      "$ref": "./paths/group.json"
+    },
+    "/group/count": {
+      "$ref": "./paths/group/count.json"
+    },
+    "/group/{ID}": {
+      "$ref": "./paths/group/%7BID%7D.json"
+    },
+    "/group/replace": {
+      "$ref": "./paths/group/replace.json"
+    },
+    "/group/{ID}/replace": {
+      "$ref": "./paths/group/%7BID%7D/replace.json"
+    },
+    "/group/report": {
+      "$ref": "./paths/group/report.json"
+    },
+    "/group/search": {
+      "$ref": "./paths/group/search.json"
+    },
+    "/group/addRemoveLicenseTypeLimits": {
+      "$ref": "./paths/group/addRemoveLicenseTypeLimits.json"
+    },
+    "/group/{ID}/addRemoveLicenseTypeLimits": {
+      "$ref": "./paths/group/%7BID%7D/addRemoveLicenseTypeLimits.json"
+    },
+    "/group/addSubgroups": {
+      "$ref": "./paths/group/addSubgroups.json"
+    },
+    "/group/{ID}/addSubgroups": {
+      "$ref": "./paths/group/%7BID%7D/addSubgroups.json"
+    },
+    "/group/assignMultiple": {
+      "$ref": "./paths/group/assignMultiple.json"
+    },
+    "/group/{ID}/assignMultiple": {
+      "$ref": "./paths/group/%7BID%7D/assignMultiple.json"
+    },
+    "/group/checkDelete": {
+      "$ref": "./paths/group/checkDelete.json"
+    },
+    "/group/{ID}/checkDelete": {
+      "$ref": "./paths/group/%7BID%7D/checkDelete.json"
+    },
+    "/group/getGroupMembers": {
+      "$ref": "./paths/group/getGroupMembers.json"
+    },
+    "/group/{ID}/getGroupMembers": {
+      "$ref": "./paths/group/%7BID%7D/getGroupMembers.json"
+    },
+    "/group/getParents": {
+      "$ref": "./paths/group/getParents.json"
+    },
+    "/group/{ID}/getParents": {
+      "$ref": "./paths/group/%7BID%7D/getParents.json"
+    },
+    "/group/replaceDeleteGroups": {
+      "$ref": "./paths/group/replaceDeleteGroups.json"
+    },
+    "/group/{ID}/replaceDeleteGroups": {
+      "$ref": "./paths/group/%7BID%7D/replaceDeleteGroups.json"
+    },
+    "/group/setLicenseTypeLimit": {
+      "$ref": "./paths/group/setLicenseTypeLimit.json"
+    },
+    "/group/{ID}/setLicenseTypeLimit": {
+      "$ref": "./paths/group/%7BID%7D/setLicenseTypeLimit.json"
+    },
+    "/group/updateMembersList": {
+      "$ref": "./paths/group/updateMembersList.json"
+    },
+    "/group/{ID}/updateMembersList": {
+      "$ref": "./paths/group/%7BID%7D/updateMembersList.json"
+    },
+    "/cust/metadata": {
+      "$ref": "./paths/cust/metadata.json"
+    },
+    "/cust": {
+      "$ref": "./paths/cust.json"
+    },
+    "/cust/{ID}": {
+      "$ref": "./paths/cust/%7BID%7D.json"
+    },
+    "/cust/getPackagingOptionValue": {
+      "$ref": "./paths/cust/getPackagingOptionValue.json"
+    },
+    "/cust/{ID}/getPackagingOptionValue": {
+      "$ref": "./paths/cust/%7BID%7D/getPackagingOptionValue.json"
+    },
+    "/cust/goalsEnabled": {
+      "$ref": "./paths/cust/goalsEnabled.json"
+    },
+    "/cust/{ID}/goalsEnabled": {
+      "$ref": "./paths/cust/%7BID%7D/goalsEnabled.json"
+    },
+    "/cust/isPackagingOptionEnabled": {
+      "$ref": "./paths/cust/isPackagingOptionEnabled.json"
+    },
+    "/cust/{ID}/isPackagingOptionEnabled": {
+      "$ref": "./paths/cust/%7BID%7D/isPackagingOptionEnabled.json"
+    },
+    "/cust/productEnabled": {
+      "$ref": "./paths/cust/productEnabled.json"
+    },
+    "/cust/{ID}/productEnabled": {
+      "$ref": "./paths/cust/%7BID%7D/productEnabled.json"
+    },
+    "/cust/updateLoginAsSettings": {
+      "$ref": "./paths/cust/updateLoginAsSettings.json"
+    },
+    "/cust/{ID}/updateLoginAsSettings": {
+      "$ref": "./paths/cust/%7BID%7D/updateLoginAsSettings.json"
+    },
+    "/extsec/metadata": {
+      "$ref": "./paths/extsec/metadata.json"
+    },
+    "/extsec": {
+      "$ref": "./paths/extsec.json"
+    },
+    "/extsec/count": {
+      "$ref": "./paths/extsec/count.json"
+    },
+    "/extsec/{ID}": {
+      "$ref": "./paths/extsec/%7BID%7D.json"
+    },
+    "/extsec/report": {
+      "$ref": "./paths/extsec/report.json"
+    },
+    "/extsec/search": {
+      "$ref": "./paths/extsec/search.json"
+    },
+    "/extsec/calculateURL": {
+      "$ref": "./paths/extsec/calculateURL.json"
+    },
+    "/extsec/{ID}/calculateURL": {
+      "$ref": "./paths/extsec/%7BID%7D/calculateURL.json"
+    },
+    "/extsec/calculateURLS": {
+      "$ref": "./paths/extsec/calculateURLS.json"
+    },
+    "/extsec/{ID}/calculateURLS": {
+      "$ref": "./paths/extsec/%7BID%7D/calculateURLS.json"
+    }
+  }
+}
