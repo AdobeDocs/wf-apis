@@ -7,12 +7,12 @@ description: Workfront v13.0 API overview page.
 
 The Workfrtont APIs include endpoints for the following:
 
-* [Project objects](project.md)
-* [User objtects](user.md)
-* [Issue objects](issue.md)
-* [Task objects](task.md)
-* [Document objects](document.md)
-* [Other endpoints outside of the functions listed above](other.md)
+* [Project objects](/project.md)
+* [User objtects](/user.md)
+* [Issue objects](/issue.md)
+* [Task objects](/task.md)
+* [Document objects](/document.md)
+* [Other endpoints outside of the functions listed above](/other.md)
 
 
 #### Resources
