@@ -1,0 +1,141 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Workfront PROJ API v14.0",
+    "contact": {
+      "email": "support@workfront.com"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://*.my.workfront.com/attask/api/v14.0",
+      "description": "My Workfront API v14.0 Server"
+    }
+  ],
+  "components": {
+    "securitySchemes": {
+      "$ref": "./securitySchemes/index.yml"
+    }
+  },
+  "security": [
+    {
+      "apiKeyHeader": []
+    },
+    {
+      "apiKeyQuery": []
+    },
+    {
+      "sessionCookie": []
+    },
+    {
+      "sessionHeader": []
+    },
+    {
+      "sessionQuery": []
+    },
+    {
+      "usernameHeader": [],
+      "passwordHeader": []
+    },
+    {
+      "usernameQuery": [],
+      "passwordQuery": []
+    }
+  ],
+  "tags": [
+    {
+      "name": "authentication",
+      "description": "Requests related to ensuring follow-up requests have the proper access."
+    },
+    {
+      "name": "general",
+      "description": "General purpose requests"
+    }
+  ],
+  "paths": {
+    "/proj/metadata": {
+      "$ref": "./paths/proj/metadata.json"
+    },
+    "/proj": {
+      "$ref": "./paths/proj.json"
+    },
+    "/proj/count": {
+      "$ref": "./paths/proj/count.json"
+    },
+    "/proj/{ID}": {
+      "$ref": "./paths/proj/%7BID%7D.json"
+    },
+    "/proj/report": {
+      "$ref": "./paths/proj/report.json"
+    },
+    "/proj/search": {
+      "$ref": "./paths/proj/search.json"
+    },
+    "/proj/approveApproval": {
+      "$ref": "./paths/proj/approveApproval.json"
+    },
+    "/proj/{ID}/approveApproval": {
+      "$ref": "./paths/proj/%7BID%7D/approveApproval.json"
+    },
+    "/proj/attachTemplate": {
+      "$ref": "./paths/proj/attachTemplate.json"
+    },
+    "/proj/{ID}/attachTemplate": {
+      "$ref": "./paths/proj/%7BID%7D/attachTemplate.json"
+    },
+    "/proj/calculateDataExtension": {
+      "$ref": "./paths/proj/calculateDataExtension.json"
+    },
+    "/proj/{ID}/calculateDataExtension": {
+      "$ref": "./paths/proj/%7BID%7D/calculateDataExtension.json"
+    },
+    "/proj/calculateFinance": {
+      "$ref": "./paths/proj/calculateFinance.json"
+    },
+    "/proj/{ID}/calculateFinance": {
+      "$ref": "./paths/proj/%7BID%7D/calculateFinance.json"
+    },
+    "/proj/calculateTimeline": {
+      "$ref": "./paths/proj/calculateTimeline.json"
+    },
+    "/proj/{ID}/calculateTimeline": {
+      "$ref": "./paths/proj/%7BID%7D/calculateTimeline.json"
+    },
+    "/proj/linkExternalObject": {
+      "$ref": "./paths/proj/linkExternalObject.json"
+    },
+    "/proj/{ID}/linkExternalObject": {
+      "$ref": "./paths/proj/%7BID%7D/linkExternalObject.json"
+    },
+    "/proj/recallApproval": {
+      "$ref": "./paths/proj/recallApproval.json"
+    },
+    "/proj/{ID}/recallApproval": {
+      "$ref": "./paths/proj/%7BID%7D/recallApproval.json"
+    },
+    "/proj/rejectApproval": {
+      "$ref": "./paths/proj/rejectApproval.json"
+    },
+    "/proj/{ID}/rejectApproval": {
+      "$ref": "./paths/proj/%7BID%7D/rejectApproval.json"
+    },
+    "/proj/setBudgetToSchedule": {
+      "$ref": "./paths/proj/setBudgetToSchedule.json"
+    },
+    "/proj/{ID}/setBudgetToSchedule": {
+      "$ref": "./paths/proj/%7BID%7D/setBudgetToSchedule.json"
+    },
+    "/proj/unlinkExternalObject": {
+      "$ref": "./paths/proj/unlinkExternalObject.json"
+    },
+    "/proj/{ID}/unlinkExternalObject": {
+      "$ref": "./paths/proj/%7BID%7D/unlinkExternalObject.json"
+    },
+    "/proj/updateBusinessCaseSource": {
+      "$ref": "./paths/proj/updateBusinessCaseSource.json"
+    },
+    "/proj/{ID}/updateBusinessCaseSource": {
+      "$ref": "./paths/proj/%7BID%7D/updateBusinessCaseSource.json"
+    }
+  }
+}
