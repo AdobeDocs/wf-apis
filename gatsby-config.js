@@ -14,17 +14,17 @@ module.exports = {
   siteMetadata: {
     versions: [
       {
-        title: 'v2.0',
+        title: 'v14.0',
         selected: true
       },
       {
-        title: 'v1.4',
+        title: 'v13.0',
         path: 'https://github.com/AdobeDocs/analytics-1.4-apis'
       }
     ],
     pages: [
       {
-        title: 'Adobe Analytics',
+        title: 'Adobe Workfront',
         path: '/'
       },
       {
@@ -34,13 +34,13 @@ module.exports = {
       {
         title: 'API Reference',
         menu: [{
-          title: 'API Reference v2.0',
-          description: 'Adobe Analytics Reporting API',
-          path: '/api/index.md'
+          title: 'API Reference v14.0',
+          description: 'Adobe Workfront API',
+          path: '/index.md'
         }, {
-          title: 'API Reference v1.4',
-          description: 'API Spec for the Adobe Marketing Cloud',
-          path: '/api/1.4.md'
+          title: 'API Reference v13.0',
+          description: 'Adobe Workfront API v13.0',
+          path: '/test.md'
         }]
       },
       {
