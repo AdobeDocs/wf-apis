@@ -1,5 +1,5 @@
 ---
-title: Adobe Workfront: API reference v14.0 for Issues Objects
-description: API calls that you can make using Workfront version 14.0 APIs for Issues.
-openAPISpec: /issue_v14.json  
+title: Adobe Workfront: API reference v13.0 for Issues Objects
+description: API calls that you can make using Workfront version 13.0 APIs for Issues.
+openAPISpec: https://raw.githubusercontent.com/AdobeDocs/wf-apis/main/oas_files/issue.json
 ---
