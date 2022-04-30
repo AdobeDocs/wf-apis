@@ -1,0 +1,195 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Workfront OPTASK API v14.0",
+    "contact": {
+      "email": "support@workfront.com"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://*.my.workfront.com/attask/api/v14.0",
+      "description": "My Workfront API v14.0 Server"
+    }
+  ],
+  "components": {
+    "securitySchemes": {
+      "$ref": "./securitySchemes/index.yml"
+    }
+  },
+  "security": [
+    {
+      "apiKeyHeader": []
+    },
+    {
+      "apiKeyQuery": []
+    },
+    {
+      "sessionCookie": []
+    },
+    {
+      "sessionHeader": []
+    },
+    {
+      "sessionQuery": []
+    },
+    {
+      "usernameHeader": [],
+      "passwordHeader": []
+    },
+    {
+      "usernameQuery": [],
+      "passwordQuery": []
+    }
+  ],
+  "tags": [
+    {
+      "name": "authentication",
+      "description": "Requests related to ensuring follow-up requests have the proper access."
+    },
+    {
+      "name": "general",
+      "description": "General purpose requests"
+    }
+  ],
+  "paths": {
+    "/optask/metadata": {
+      "$ref": "./paths/optask/metadata.json"
+    },
+    "/optask": {
+      "$ref": "./paths/optask.json"
+    },
+    "/optask/count": {
+      "$ref": "./paths/optask/count.json"
+    },
+    "/optask/{ID}": {
+      "$ref": "./paths/optask/%7BID%7D.json"
+    },
+    "/optask/report": {
+      "$ref": "./paths/optask/report.json"
+    },
+    "/optask/search": {
+      "$ref": "./paths/optask/search.json"
+    },
+    "/optask/acceptWork": {
+      "$ref": "./paths/optask/acceptWork.json"
+    },
+    "/optask/{ID}/acceptWork": {
+      "$ref": "./paths/optask/%7BID%7D/acceptWork.json"
+    },
+    "/optask/approveApproval": {
+      "$ref": "./paths/optask/approveApproval.json"
+    },
+    "/optask/{ID}/approveApproval": {
+      "$ref": "./paths/optask/%7BID%7D/approveApproval.json"
+    },
+    "/optask/assign": {
+      "$ref": "./paths/optask/assign.json"
+    },
+    "/optask/{ID}/assign": {
+      "$ref": "./paths/optask/%7BID%7D/assign.json"
+    },
+    "/optask/assignMultiple": {
+      "$ref": "./paths/optask/assignMultiple.json"
+    },
+    "/optask/{ID}/assignMultiple": {
+      "$ref": "./paths/optask/%7BID%7D/assignMultiple.json"
+    },
+    "/optask/bulkMove": {
+      "$ref": "./paths/optask/bulkMove.json"
+    },
+    "/optask/{ID}/bulkMove": {
+      "$ref": "./paths/optask/%7BID%7D/bulkMove.json"
+    },
+    "/optask/calculateDataExtension": {
+      "$ref": "./paths/optask/calculateDataExtension.json"
+    },
+    "/optask/{ID}/calculateDataExtension": {
+      "$ref": "./paths/optask/%7BID%7D/calculateDataExtension.json"
+    },
+    "/optask/convertToProject": {
+      "$ref": "./paths/optask/convertToProject.json"
+    },
+    "/optask/{ID}/convertToProject": {
+      "$ref": "./paths/optask/%7BID%7D/convertToProject.json"
+    },
+    "/optask/convertToTask": {
+      "$ref": "./paths/optask/convertToTask.json"
+    },
+    "/optask/{ID}/convertToTask": {
+      "$ref": "./paths/optask/%7BID%7D/convertToTask.json"
+    },
+    "/optask/copyIssue": {
+      "$ref": "./paths/optask/copyIssue.json"
+    },
+    "/optask/{ID}/copyIssue": {
+      "$ref": "./paths/optask/%7BID%7D/copyIssue.json"
+    },
+    "/optask/linkExternalObject": {
+      "$ref": "./paths/optask/linkExternalObject.json"
+    },
+    "/optask/{ID}/linkExternalObject": {
+      "$ref": "./paths/optask/%7BID%7D/linkExternalObject.json"
+    },
+    "/optask/markDone": {
+      "$ref": "./paths/optask/markDone.json"
+    },
+    "/optask/{ID}/markDone": {
+      "$ref": "./paths/optask/%7BID%7D/markDone.json"
+    },
+    "/optask/markNotDone": {
+      "$ref": "./paths/optask/markNotDone.json"
+    },
+    "/optask/{ID}/markNotDone": {
+      "$ref": "./paths/optask/%7BID%7D/markNotDone.json"
+    },
+    "/optask/move": {
+      "$ref": "./paths/optask/move.json"
+    },
+    "/optask/{ID}/move": {
+      "$ref": "./paths/optask/%7BID%7D/move.json"
+    },
+    "/optask/moveToTask": {
+      "$ref": "./paths/optask/moveToTask.json"
+    },
+    "/optask/{ID}/moveToTask": {
+      "$ref": "./paths/optask/%7BID%7D/moveToTask.json"
+    },
+    "/optask/recallApproval": {
+      "$ref": "./paths/optask/recallApproval.json"
+    },
+    "/optask/{ID}/recallApproval": {
+      "$ref": "./paths/optask/%7BID%7D/recallApproval.json"
+    },
+    "/optask/rejectApproval": {
+      "$ref": "./paths/optask/rejectApproval.json"
+    },
+    "/optask/{ID}/rejectApproval": {
+      "$ref": "./paths/optask/%7BID%7D/rejectApproval.json"
+    },
+    "/optask/replyToAssignment": {
+      "$ref": "./paths/optask/replyToAssignment.json"
+    },
+    "/optask/{ID}/replyToAssignment": {
+      "$ref": "./paths/optask/%7BID%7D/replyToAssignment.json"
+    },
+    "/optask/unacceptWork": {
+      "$ref": "./paths/optask/unacceptWork.json"
+    },
+    "/optask/{ID}/unacceptWork": {
+      "$ref": "./paths/optask/%7BID%7D/unacceptWork.json"
+    },
+    "/optask/unassign": {
+      "$ref": "./paths/optask/unassign.json"
+    },
+    "/optask/{ID}/unassign": {
+      "$ref": "./paths/optask/%7BID%7D/unassign.json"
+    },
+    "/optask/unlinkExternalObject": {
+      "$ref": "./paths/optask/unlinkExternalObject.json"
+    },
+    "/optask/{ID}/unlinkExternalObject": {
+      "$ref": "./paths/optask/%7BID%7D/unlinkExternalObject.json"
+    }
+  }
+}
