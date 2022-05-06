@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-pages-api-user-md","path":"/api/user/","result":{"pageContext":{"frontmatter":{"title":"Workfront API reference v13.0 for User Objects","description":"API calls that you can make using Workfront version 13.0 APIs for Users.","openAPISpec":"https://raw.githubusercontent.com/AdobeDocs/wf-apis/main/user_v13.json"}}},"staticQueryHashes":["915530536"]}
+{
+    "componentChunkName": "component---src-pages-api-user-md",
+    "path": "/api/user/",
+    "result": {"pageContext":{"frontmatter":{"title":"Workfront API reference v13.0 for User Objects","description":"API calls that you can make using Workfront version 13.0 APIs for Users.","openAPISpec":"https://raw.githubusercontent.com/AdobeDocs/wf-apis/main/user_v13.json"}}},
+    "staticQueryHashes": ["915530536"]}

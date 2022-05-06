@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-pages-api-project-md","path":"/api/project/","result":{"pageContext":{"frontmatter":{"title":"Workfront API reference v13.0 for Project Objects","description":"API calls that you can make using Workfront version 13.0 APIs for Projects.","openAPISpec":"https://raw.githubusercontent.com/AdobeDocs/wf-apis/main/project_v13.json"}}},"staticQueryHashes":["915530536"]}
+{
+    "componentChunkName": "component---src-pages-api-project-md",
+    "path": "/api/project/",
+    "result": {"pageContext":{"frontmatter":{"title":"Workfront API reference v13.0 for Project Objects","description":"API calls that you can make using Workfront version 13.0 APIs for Projects.","openAPISpec":"https://raw.githubusercontent.com/AdobeDocs/wf-apis/main/project_v13.json"}}},
+    "staticQueryHashes": ["915530536"]}
