@@ -24,10 +24,10 @@
     globby "^11.0.1"
     graphql-fetch "^1.0.1"
 
-"@adobe/gatsby-theme-aio@^4.2.0":
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/@adobe/gatsby-theme-aio/-/gatsby-theme-aio-4.2.0.tgz#408f39c4bb7f3b0718965e6f76f6b837827dbac9"
-  integrity sha512-jZOfCNPejmEfUS4VLZfWWpd+s4uD9Hb4ywoJamF2vU7TVX4euXdeUyerHzF95o9QX/NYEDVBruLb5cPkCjwDOw==
+"@adobe/gatsby-theme-aio@^4.2.2":
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/@adobe/gatsby-theme-aio/-/gatsby-theme-aio-4.2.2.tgz#96839cdf6f6f8e30c74a26f066f9fa0b5334ae96"
+  integrity sha512-oqEjo0S4fbPVswWyuV/BulpLIaveLjJkX7+2sIkgygcxoY8Ep0jMudN8GPJgFSkPdHWwKhYpUKiMzbZUdzIdmg==
   dependencies:
     "@adobe/focus-ring-polyfill" "^0.1.5"
     "@adobe/gatsby-source-github-file-contributors" "^0.3.1"
@@ -38,13 +38,15 @@
     "@mdx-js/react" "^1.6.22"
     "@spectrum-css/accordion" "3.0.1"
     "@spectrum-css/actionbutton" "1.0.1"
+    "@spectrum-css/actiongroup" "^1.0.24"
     "@spectrum-css/assetlist" "3.0.1"
+    "@spectrum-css/badge" "^1.0.18"
     "@spectrum-css/breadcrumb" "3.0.1"
     "@spectrum-css/button" "3.0.1"
     "@spectrum-css/card" "3.0.1"
     "@spectrum-css/checkbox" "3.0.1"
     "@spectrum-css/dialog" "3.0.1"
-    "@spectrum-css/divider" "1.0.1"
+    "@spectrum-css/divider" "1.0.24"
     "@spectrum-css/icon" "3.0.1"
     "@spectrum-css/inlinealert" "1.0.0"
     "@spectrum-css/link" "3.1.1"
@@ -3044,10 +3046,20 @@
   resolved "https://registry.yarnpkg.com/@spectrum-css/actionbutton/-/actionbutton-1.0.1.tgz#9c75da37ea6915919fb574c74bd60dacc03b6577"
   integrity sha512-AUqtyNabHF451Aj9i3xz82TxS5Z6k1dttA68/1hMeU9kbPCSS4P6Viw3vaRGs9CSspuR8xnnhDgrq+F+zMy2Hw==
 
+"@spectrum-css/actiongroup@^1.0.24":
+  version "1.0.25"
+  resolved "https://registry.yarnpkg.com/@spectrum-css/actiongroup/-/actiongroup-1.0.25.tgz#e9bfb9f98aacc5f0807bdec608a7a89de0354e24"
+  integrity sha512-cmLQylqtVFR4t2udXe30F8KykdIYb0NeYqXcrlxA1F9V6rlNRjUwdqbOn1SCK6cBe7ilCASuIx+FOXaU+OC2tg==
+
 "@spectrum-css/assetlist@3.0.1":
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/@spectrum-css/assetlist/-/assetlist-3.0.1.tgz#192f9ec29769600f1ab2c94f664ee5bb255bfb85"
   integrity sha512-Ay/5dYWp9mb/EwqiI6ZLGpk7oybuohkd1DwC+aCnoathJ2QJrG5HOF0Db43j9EvxqFMXBROvKIRNMP1EVx2bLA==
+
+"@spectrum-css/badge@^1.0.18":
+  version "1.0.18"
+  resolved "https://registry.yarnpkg.com/@spectrum-css/badge/-/badge-1.0.18.tgz#19333f648287ea552bd81a1c99e9f417a0c311a5"
+  integrity sha512-cyKbWe9j4cEWS/OWlhl5Zi6+Pcb9jj/iZbT5U60v67DPTLVYY1J8NspR0b2n2PvAthYiQe+i8bIprARHS5YTLw==
 
 "@spectrum-css/breadcrumb@3.0.1":
   version "3.0.1"
@@ -3074,12 +3086,12 @@
   resolved "https://registry.yarnpkg.com/@spectrum-css/dialog/-/dialog-3.0.1.tgz#33aae036282159f6aa998848b8c0828640a9620a"
   integrity sha512-hUFbRR6RGT63MNuP7wP+k9KU+uRuICsduMihskh700e+jiQ+Gsv53fBFDlB843FoZYlIXzFQXgtjMUC5a4Qibw==
 
-"@spectrum-css/divider@1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@spectrum-css/divider/-/divider-1.0.1.tgz#9d2b8d0b6bc05f08249608297e0e179f6510458c"
-  integrity sha512-IjANehC0qwPIrJ4w9zJGMlhtTXW5n7X3yI7ZhjVMgehXE2dbm50QXLOrEOkq5rjTO0T4lQW6OnHSsE3F8Pnv4w==
+"@spectrum-css/divider@1.0.24":
+  version "1.0.24"
+  resolved "https://registry.yarnpkg.com/@spectrum-css/divider/-/divider-1.0.24.tgz#743ab3f02a4b44c8eb02f971394609f9034ae4d9"
+  integrity sha512-1di+RgsCNm+HsQl20lAwXh23RPMZxLInlz8A0w+r4s9WRrwInEbTC3xHmfN6rSfBPJKQSQ5J78ipOH8qDSB0Jg==
   dependencies:
-    "@spectrum-css/vars" "^3.0.1"
+    "@spectrum-css/vars" "^8.0.0"
 
 "@spectrum-css/icon@3.0.1":
   version "3.0.1"
@@ -3166,10 +3178,10 @@
   resolved "https://registry.yarnpkg.com/@spectrum-css/vars/-/vars-3.0.1.tgz#561fd69098f896a647242dd8d6108af603bfa31e"
   integrity sha512-l4oRcCOqInChYXZN6OQhpe3isk6l4OE6Ys8cgdlsiKp53suNoQxyyd9p/eGRbCjZgH3xQ8nK0t4DHa7QYC0S6w==
 
-"@spectrum-css/vars@^3.0.1":
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/@spectrum-css/vars/-/vars-3.0.2.tgz#ea9062c3c98dfc6ba59e5df14a03025ad8969999"
-  integrity sha512-vzS9KqYXot4J3AEER/u618MXWAS+IoMvYMNrOoscKiLLKYQWenaueakUWulFonToPd/9vIpqtdbwxznqrK5qDw==
+"@spectrum-css/vars@^8.0.0":
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/@spectrum-css/vars/-/vars-8.0.0.tgz#b88a3b1165b63de50ab01f20ccafb42115d67443"
+  integrity sha512-cClQgNyH1VdNu6zdiZ5M7kbQDZS4/wPAclk5IPO5+nMhSzqTesUL/zfiaPB95MTCKFyVJrFpOeJ37HmUifWJ3A==
 
 "@spectrum-css/well@3.0.1":
   version "3.0.1"
